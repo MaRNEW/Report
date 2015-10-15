@@ -4,26 +4,26 @@ This document is a place to collect text for the MaRNEW Workshop Report. __This 
 
 ### Agenda
 Thur 24	
-09:00 – 09:20	Introduction: welcome, introductions and announcements
-09:20 – 10:00	Scene Setting: defining goals, layouts and key in and out of cope topics.
-10:00 – 11:15	Session 1: Encryption Deployment Considerations
-11:15 – 11:45	Coffee Break
-11:45 – 13:00	Session 2: Trust Models and User Choice (Privacy)
-13:00 – 14:00	Lunch
-14:00 – 15:45	Session 3: Sending Data Up for Network Management Benefits
-15:45 – 16:15	Break
-16:15 – 17:30	Session 4: Sending Data Down for Network Management Benefits
-17:30 – 18:00	Day 1 Wrap Up
+* 09:00 – 09:20	Introduction: welcome, introductions and announcements
+* 09:20 – 10:00	Scene Setting: defining goals, layouts and key in and out of cope topics.
+* 10:00 – 11:15	Session 1: Encryption Deployment Considerations
+* 11:15 – 11:45	Coffee Break
+* 11:45 – 13:00	Session 2: Trust Models and User Choice (Privacy)
+* 13:00 – 14:00	Lunch
+* 14:00 – 15:45	Session 3: Sending Data Up for Network Management Benefits
+* 15:45 – 16:15	Break
+* 16:15 – 17:30	Session 4: Sending Data Down for Network Management Benefits
+* 17:30 – 18:00	Day 1 Wrap Up
 
 Fri 25	
-09:00 – 10:30	Session 5: Application Layer Optimisation, Caching and CDNs
-10:30 – 11:00	Break
-11:00 – 12:30	Session 6: Transport Layer: Issues, Optimisation and Solutions
-12:30 – 13:30	Lunch
-13:30 – 14:30	Session 7: Technical Analysis and Response to Potential Regulatory Reaction
-14:30 – 15:30	Parking Lot: time to review open questions from the last two days
-15:30 – 16:00	Break
-16:00 – 17:00	Roundup
+* 09:00 – 10:30	Session 5: Application Layer Optimisation, Caching and CDNs
+* 10:30 – 11:00	Break
+* 11:00 – 12:30	Session 6: Transport Layer: Issues, Optimisation and Solutions
+* 12:30 – 13:30	Lunch
+* 13:30 – 14:30	Session 7: Technical Analysis and Response to Potential Regulatory Reaction
+* 14:30 – 15:30	Parking Lot: time to review open questions from the last two days
+* 15:30 – 16:00	Break
+* 16:00 – 17:00	Roundup
 
 ### Scene Setting: defining goals, layouts and key in and out of cope topics.
 * Increasing encryption
