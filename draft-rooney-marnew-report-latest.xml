@@ -1,0 +1,203 @@
+<rfc docName="draft-ietf-slim-use-cases-latest">
+	<front>
+    	<title abbrev="slim use cases">IAB Workshop on Managing Radio Networks in an Encrypted World (MaRNEW) Report</title>
+
+    	<author initials="N." surname="Rooney" fullname="Natasha Rooney">
+			<organization>GSMA</organization>
+			<address>
+			<postal>
+			<street>The Walbrook Building, 25 Walbrook</street>
+			<city>London</city>
+			<region></region>
+			<code>EC4N 8AF</code>
+			<country>United Kingdom</country>
+			</postal>
+			<email>nrooney@gsma.com</email>
+			</address>
+		</author>
+
+	    <date year="2015"/>
+	    <area></area>
+	    <workgroup></workgroup>
+	    <keyword>Workshop</keyword>
+	    <keyword>Report</keyword>
+	    <keyword>Encryption</keyword>
+	    <keyword>Cellular</keyword>
+	    <keyword>Radio</keyword>
+	    <keyword>Networks</keyword>
+
+	    <abstract>
+	      <t>
+	        Abstract.
+	      </t>
+	    </abstract>
+
+	</front>
+
+	<middle>
+		<section anchor="intro" title="Introduction">
+			<t>
+				Mobile networks have a set of requirements and properties which places a large emphasis on sophisticated bandwidth optimization. Encryption is increasing on the internet which is a good thing for consumer and business privacy and security. Many existing mobile bandwidth optimization solutions primarily operate on non-encrypted communications; this can lead to performance issues being amplified on mobile networks. Encryption on networks will continue to increase; and with this understanding the workshop aimed to understand how we can solve the issues of bandwidth optimization and performance on radio networks in this encrypted world.
+			</t>
+
+			<section anchor="bandwidth-optimization" title="Understanding “Bandwidth Optimization”">
+				<t>
+					For the purposes of this workshop, bandwidth optimization encompasses a variety of technical topics related to traffic engineering, prioritisation, optimisation, efficiency enhancements, as well as user-related topics such as specific subscription or billing models. These can include:
+				</t>
+				<list style="symbols">
+			          <t>Caching</t>
+			          <t>Prioritisation of interactive traffic over background traffic</t>
+			          <t>Per-user bandwidth limit</t>
+			          <t>Business-related topics such as content delivery arrangements with specific content providers.</t>
+			    </list>
+			    <t>
+					Many of these functions can continue as they’re performed today, even with more encryption. Others traditionally inspect parts of the communication that are encrypted, and will have to be done differently in a more-encrypted Internet.
+				</t>
+				<t>
+					Finally, while not strictly speaking traffic management, some networks employ policy-based filtering (e.g., requested parental controls) and all networks support some form of legal interception functionality per applicable laws.
+				</t>
+			</section>
+
+			<section anchor="topics" title="Topics">
+			</section>
+				<t>
+					For this workshop we would like to consider topics that speak to these questions, including the following:
+				</t>
+				<list style="symbols">
+					<t>Understanding the bandwidth optimization use cases particular to radio networks</t>
+					<t>Understanding existing approaches and how these do not work with encrypted traffic</t>
+					<t>Understanding reasons why the Internet has not standardised support for LI and why mobile networks have</t>
+					<t>Determining how to match traffic types with bandwidth optimization methods</t>
+					<t>Discussing minimal information to be shared to manage networks but ensure user security and privacy</t>
+					<t>Developing new bandwidth optimization techniques and protocols within these new constraints</t>
+					<t>Discussing the appropriate network layer(s) for each management function</t>
+					<t>Cooperative methods of bandwidth optimization and issues associated with these</t>
+				</list>
+				<t>
+					The outcome of the workshop will be architectural and engineering guidance on future work in the area, published as an IAB workshop report, based on discussion of proposed approaches. We will also explore possible areas for standardization, e.g. new protocols that can aid bandwidth optimization whilst ensuring user security inline with new work in the transport layer.
+				</t>
+		</section>
+		<section anchor="this-report" title="Organization of this report">
+			<t>
+				This workshop report summarizes the contributions to and discussions at the workshop, organized by topic.  The workshop began with scene setting topics which covered the issues around deploying encryption, the increased need for privacy on the internet and setting a clear understanding that ciphertext should remain unbroken. Later sessions focused on key solution areas; these included evolution on the transport layer and sending data up or down the path. A session on application layers and CDNs aimed to highlight both issues and solutions experienced on the application layer. The workshop ended with a session dedicated to technical response to regulation with regards to encryption. The contributing documents were split between identifying the issues experienced with encryption on radio networks and suggested solutions. Of the solutions suggested some focused on transport evolution, some on trusted middleboxes and others on collaborative data exchange. Solutions were discussed within the sessions. All accepted position papers and detailed transcripts of discussion are available at https://www.iab.org/activities/workshops/marnew/.
+			</t>
+			<t>
+   				The outcomes of the workshop are discussed in Section [X], and discuss progress after the workshop toward each of the identified work items as of the time of publication of this report.
+   			</t>
+		</section>
+
+		<section anchor="ipr" title="Use of Note Well and Charter House Rule">
+			<t>
+				Text. 
+			</t>
+		</section>
+
+		<section anchor="ietf-gsma" title="IETF and GSMA">
+			<t>
+				Could add something here about the differences in IETF and GSMA (not overlapping what is said in next section). 
+			</t>
+		</section>
+		
+		<section anchor="scene-setting" title="Scene Setting Sessions">
+			<t>
+				Scene setting sessions aimed to bring all attendees up to a basic understanding of the problem and the scope of the workhop. There were three scene setting sessions: Scene Setting (defining scope), Encryption Deployment Considerations and Trust Models and User Choice (Privacy).
+			</t>
+			<section anchor="scene-setting" title="Scene Setting">
+				<t>
+					The telecommunications industry and internet standards are extremely different in terms of ethos and business practices. Both industries drive technical standards in their domain and build technical solutions with some policy-driven use cases. These technologies, use cases and technical implementations are different; not only this but motivators between the two industries are also diverse.
+				</t>
+				<t>
+					To ensure all attendees were aligned with contributing to discussions and driving solutions this Scene Setting session worked on generating a clear scope with all attendees involved. In short: it was agreed that ciphertext should not be broken by any solution, that the radio access network (RAN) is different and does experience issues with increased encrypted traffic, that we need to understand what those problems are precisely and that our goal is to improve user experience on the Internet. Technical solutions for regulation was not in scope. The full scope is below.
+				</t>
+
+				<section anchor="scope" title="Scope">
+					<t>
+						The attendees identified and agreed the following scope:
+					</t>
+					<list style="symbols">
+						<t>In discussion we should assume: No broken crypto, Ciphertext increasingly common, congestion does need to be controlled as do other transport issues and Network management including efficient use of resources, in RAN and elsewhere, has to work</t>
+						<list style="symbols">
+							<t>How/why is RAN different for transport; help us understand the complexities of the RAN and how hard it is to manage and why those matter</t>
+						</list>
+						<t>What are the precise problems caused by more ciphertext</t>
+						<t>Identify players, incl. Users, and resulting tensions and how ciphertext changes those</t>
+						<t>Some solutions will be radically changed by ciphertext, it's ok to talk about that</t>
+						<t>As good as possible Quality of experience for end user is a goal</t>
+						<t>Our aim for the next two days is to analyse the situation and identify specific achievable tasks that could be tackled in the IETF or GSMA (or elsewhere?) and that improve the Internet given the assumptions above</t>
+						<t>We should not delve into:</t>
+						<list style="symbols">
+							<t>Ways of doing interception (legal or not), see RFC2804 for why</t>
+							<t>Unpredictable political actions.</t>
+						</list>
+					</list>
+				</section>
+
+				<section anchor="encryption-up-and-ran-differences" title="Encryption Statistics and Radio Access Network Differences">
+					<t>
+						Attendees were shown that encrypted content is reaching around 50% according to recent statistics [LINK TO MOZ AND AKAMAI SLIDES FROM SAAG]. IETF are also working on encryption on lower layers, for example TCP encryption within the TCPINC Working Group. 
+					</t>						
+					<t>
+						Some middlebox which exist on operator networks today work under the assumption that they are "trusted"; but qualifying trust is difficult and should not be assumed. Some interesting use cases exist with these middleboxes; such as anti-spam and malware, but these need to be balanced against their ability to open up cracks in the network for attacks such as pervasive monitoring. Some needs to improve the radio access network quality of service could come from increasing radio access network cells ("Base Stations"), but this adds to radio pollution; this shows the balancing act when deivising radio access network architecture.
+					</t>
+				</section>
+			</section>
+
+
+			<section anchor="encryption-deployment-considerations" title="Encryption Deployment Considerations">
+				<t>
+					Text.
+				</t>
+			</section>
+
+			<section anchor="trust-models-and-privacy" title="Trust Models and User Choice (Privacy)">
+				<t>
+					Text.
+				</t>
+			</section>
+
+		</section> <!-- scene setting end -->
+
+		<section anchor="network-or-transport-solution" titile="Network or Transport Solution Sessions">
+			<t>
+				Text.
+			</t>
+
+			<section anchor="sending-data-up-down" title="Sending Data Up / Down for Network Management Benefits">
+				<t>
+					Text.
+				</t>
+			</section>
+
+			<section anchor="transport-layer" title="Transport Layer: Issues, Optimisation and Solutions">
+				<t>
+					Text.
+				</t>
+			</section>
+
+		</section> <!-- network or transport solution end-->
+
+		<section anchor="application-layer" title="Application Layer Optimisation, Caching and CDNs">
+			<t>
+				Text.
+			</t>
+		</section> <!-- application layer end-->
+
+		<section anchor="technical-response-to-regulation" title="Technical Analysis and Response to Potential Regulatory Reaction">
+			<t>
+				Text.
+			</t>
+		</section> <!-- technical response end-->
+
+		<section anchor="outcomes-next-steps" title="Outcomes and Next Steps">
+			<t>
+				See next steps email.
+			</t>
+		</section> <!-- outcomes end-->
+
+	</middle>
+	
+	<back>
+	</back>
+</rfc>
+
+
