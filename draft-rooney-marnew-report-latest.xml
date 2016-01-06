@@ -98,7 +98,7 @@
 			</t>
 		</section>
 		
-		<section anchor="scene-setting" title="Scene Setting Sessions">
+		<section anchor="scene-setting-sessions" title="Scene Setting Sessions">
 			<t>
 				Scene setting sessions aimed to bring all attendees up to a basic understanding of the problem and the scope of the workhop. There were three scene setting sessions: Scene Setting (defining scope), Encryption Deployment Considerations and Trust Models and User Choice (Privacy).
 			</t>
@@ -145,21 +145,39 @@
 
 			<section anchor="encryption-deployment-considerations" title="Encryption Deployment Considerations">
 				<t>
-					Text.
+					Encryption across the internet is on the rise. However, some organisations and individuals come across a common set of operational issues when deploying encryption, mainly driven by commercial perspectives. The [UBIQUITOUS] draft explains these network management function impacts, detailing areas around incident monitoring, access control management, and regulation on mobile networks. The data was collected from various internet players, including system and network administrators across enterprise, governmental organisations and personal use. The aim of the document is to gain an understanding of what is needed for technical solutions to these issues, maintaining security and privacy for users. Attendees commented that worthwhile additions would be: different business environments (e.g. cloud environments) and service chaining. Incident monitoring in particular was noted as a difficult issue to solve given the use of URL in today's inicident monitoring middleware. 
 				</t>
+				<t>
+					Some of these impacts to mobile networks can be resolved using difference methods and the [NETWORK MANAGEMENT] draft details these methods. The draft focuses heavily on methods to manage network traffic whithout breaching user privacy and security. 
+ 				</t>
+ 				<t>
+ 					By reviewing encryption depoyment issues and the alternative methods of network management MaRNEW attendees were made aware of the issues which affect radio networks, the deployment issues which are solvable and require no further action, and those which arne't currently solveable and which should be addressed within the workshop. 
+ 				</t>
 			</section>
 
 			<section anchor="trust-models-and-privacy" title="Trust Models and User Choice (Privacy)">
 				<t>
-					Text.
-				</t>
+					Solutions of how to improve delivery of encrypted content could affect some of all of the privacy benefits that encryption brings. Understanding user needs and desires for privacy is therefore important when designing these solutions. 
+ 				</t>
+  				<t>
+					From a recent study [LINK] 64% of users said concerns over privacy have increased, 67% of mobile internet users would like to do more to protect their privacy. The W3C and IETF have both responded to user desires for better privacy by recommending end-to-end encryption for new protocols and web technologies. Within the W3C new security standards are emerging and the design principles for HTML hold that users are the stakeholders with most priority, followed by implementors and other stakeholders, further inforcing the "user first" principle. Users also have certain security expectations from particular contexts, and sometimes use new technologies to further protect their privacy even if those technologies weren't initially developed for that purpose.
+ 				</t>
+ 				<t>
+ 					Technologies which can impact user privacy sometimes do this ignorant of the privacy implications or incorrectly assume that the benefits users gain from the new technology outweigh the loss of private information. Any new technology which introduces bad security vectors will be used by attackers. If these technologies are necessary they should be opt-in. 
+ 				</t>
+ 				<t>
+ 					Internet stakeholders should understand the priority of other stakeholders. Users should be considered the first priority, other stakeholders include implementors, developers, advertisers, operators and other ISPs. Some technologies have been absued by these parties, such as cookie use or JavaScript injection. This has caused some developers to encrypt content to circumnavigate these technologies which they find intrusive or bad for their users privacy.
+ 				</t>
+ 				<t>
+ 					Some suggested solutions for network management of encrypted traffic have suggested "trust models". If users and content providers are to opt-in to user network management services with negative privacy impacts they should see clear value from using these services, and understand the impacts on clear interfaces. Users should also have easy abilities to opt-out. Some users will always automatically click through consent requests, so any trust model is flawed for these users. Understanding the extent of "auto click through" may help make better decisions for consent requests in the future. One trust model (Cooperative Traffic Management) works as an agent of the user; by opting-in metadata can be shared. Issues with this involve trust only being applied on end. 
+ 				</t>
 			</section>
 
 		</section> <!-- scene setting end -->
 
-		<section anchor="network-or-transport-solution" titile="Network or Transport Solution Sessions">
+		<section anchor="network-or-transport-solution" title="Network or Transport Solution Sessions">
 			<t>
-				Text.
+				Network or Transport Solution Sessions aimed to discuss suggested and new solutions for managing encrypted traffic on radio access networks. Most solutions focus on the sharing of metadata; either from the enpoint to the network, from the network to the endpoint, or cooperative sharing between both. Evolutions on the transport layer could be another approach to solve some of the issues radio access networks experience which cause them to require network management middleboxes. By removing problems on the transport layer the need to expesnive middleboxes could decrease. 
 			</t>
 
 			<section anchor="sending-data-up-down" title="Sending Data Up / Down for Network Management Benefits">
@@ -178,7 +196,19 @@
 
 		<section anchor="application-layer" title="Application Layer Optimisation, Caching and CDNs">
 			<t>
-				Text.
+				Many discussions on the effects of encrypted traffic on radio access networks happen between implementers and the network operators; this session aimed to gather the opinions of the content and caching providers including their experiences running over mobile networks, the experience their users expect, and what they would like to achieve by working with or using the mobile network. 
+			</t>
+			<t>
+				Content providers assume the mobile networks are standard compliant. When the network is not standards compliant (e.g. using non standards compliant intermediaries) content providers can experience real costs as users contact their support centres to report issues which are difficult to test for and build upon. 
+			</t>
+			<t>
+				Adaptive streaming is dependant on the network, not the content provider. The network has control here...
+			</t>
+			<t>
+				CDNs are understood to be a trusted deliver of content and have done great work in fixed networks. Now traffic is moving more to mobile networks there is a need to place caches in the Gi LAN or the radio network within the mobile network. The CNDi working group at IETF aims to allow global CDNs to interoperate with mobile CDNs; but this causes huge trust issues for the caching of encrypted data between these CDNs. 
+			</t>
+			<t>
+				data caps
 			</t>
 		</section> <!-- application layer end-->
 
