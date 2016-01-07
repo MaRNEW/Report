@@ -202,19 +202,37 @@
 				Content providers assume the mobile networks are standard compliant. When the network is not standards compliant (e.g. using non standards compliant intermediaries) content providers can experience real costs as users contact their support centres to report issues which are difficult to test for and build upon. 
 			</t>
 			<t>
-				Adaptive streaming is dependant on the network, not the content provider. The network has control here...
+				CDNs are understood to be a trusted deliver of content and have done great work in fixed networks. Now traffic is moving more to mobile networks there is a need to place caches at the edge of the network (e.g. in the Gi LAN or the radio network) within the mobile network. Places caches at the edge of the mobile network is a solution, but requires standards developed by content providers and mobile network operators. The CNDi working group at IETF aims to allow global CDNs to interoperate with mobile CDNs; but this causes huge trust issues for the caching of encrypted data between these CDNs. Some CDNs are experimenting with "Keyless SSL" to enable safer storage of content without passing private keys to the CDN. Blind Caching is another proposal aimed at caching encrypted content closer to the user and managing the authentication at the original content provider servers. 
 			</t>
 			<t>
-				CDNs are understood to be a trusted deliver of content and have done great work in fixed networks. Now traffic is moving more to mobile networks there is a need to place caches in the Gi LAN or the radio network within the mobile network. The CNDi working group at IETF aims to allow global CDNs to interoperate with mobile CDNs; but this causes huge trust issues for the caching of encrypted data between these CDNs. 
+				Content providers explained how even though this workshop cited encrypted data over radio access networks as the main issue the real issue is network management generally, and all actors (applications providers, networks and devices) need to work together to overcome theese general network management issues. 
 			</t>
 			<t>
-				data caps
+				Content providers cited other common issues concerning data traffic over mobile networks. Data caps cause issues for users; users are confused about how data caps work or are unsure how expensive media is and how much data it consumes. DNS and DNS caching cause unpredictable results. Developers build products on networks not indicative of the networks their customers are using and not every organisation has the finances to build a caching infrastructure.
+			</t>
+			<t>
+				At the end of the session the panelists were asked to identify one key collaborative work item, these were: evolving caching to cache encrypted content, uing one-bit for latency / bandwidth trade-off (explained below), better collaboration between the network and application, better metrics to aid bug solving and innovation, and indications from the network to allow the application to adapt. 
 			</t>
 		</section> <!-- application layer end-->
 
 		<section anchor="technical-response-to-regulation" title="Technical Analysis and Response to Potential Regulatory Reaction">
 			<t>
-				Text.
+				This session was conducted under Chatham House Rule. The session aimed to discuss regulatory and politcal issues; but not their worth or need, rather to understand the laws that exist and how technologists can properly respond to these. 
+			</t>
+			<t>
+				Mobile networks are regulated, compliance is mandatory (can result in service license revocation) and can incur costs on the mobile network operator. Regulation does vary geographically. Some regulations are court orders, others are "block lists" of websites such as the Internet Watch Foundation list. Operators are not expected to decrypt sites, so those identified sites which are encrypted will not be blocked. 
+			</t>
+			<t>
+				Parental control-type filters on the network are easily bypassed, vastly limiting their effectiveness. Better solutions would allow for users to easily set these restirctions themselves. Other regulations are also hard to meet - such as user data patterns, or will become harder to collect - such as IoT cases. Most attendees agreed that if the governments cannot get the information from network operators they will approach the content providers. Some governments are aware of the impact of encryption and are working with or trying to work with content providers. The IAB have concluded blocking and filtering can be done at the endpoint of the communication.
+			</t>
+			<t>
+				If technical solutions do exist technologists shuld ensure that they have the ability to be easily switched off. 
+			</t>
+			<t>
+				These regulations do not always apply to the internet, and the internet community is not always aware of their existance. Collectively the internet community can work with GSMA and 3GPP and act collectively to alleviate the risk imposed by encrypted traffic for lawful intercept.
+			</t>
+			<t>
+				Some mobile network operators are producing transparency reports covering regulations including lawful intercept. Operators who have done this already are encouraging others to do the same. 
 			</t>
 		</section> <!-- technical response end-->
 
