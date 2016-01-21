@@ -95,6 +95,12 @@
 		<section anchor="ietf-gsma" title="IETF and GSMA">
 			<t>
 				Could add something here about the differences in IETF and GSMA (not overlapping what is said in next section). 
+
+				Traditionally mobile networks have managed different applications and services based on the resources available and priorities given; for instance, emergency services have a top priority, data has a lower prioirty and voice services are somewhere inbetween. 3GPP defined the PCC-QoS mechanism to support this functionality; encryption breaks this standard 
+
+					INCLUDE THIS? causing some issues such as bad handovers between radio network cells, the release of the "wrong service" (as defined by the 3GPP standard) and stopping middleboxes from working. 
+
+
 			</t>
 		</section>
 		
@@ -182,14 +188,28 @@
 
 			<section anchor="sending-data-up-down" title="Sending Data Up / Down for Network Management Benefits">
 				<t>
-					Middleboxes in the network have a number of uses, some which are more beneficial than they are controversial. Collaboration between these network elements and the endpoints could bring about better content distribution, Mobile Throughput Guidance is one such approach by exchanging data between the network elements and the endpoints via TCP Options. Mobile Throughput Guidance also allows for gaining a better idea of how the transport protocol behaves and improving user experience further, although the work still needs to evolve. An API for operators to share congestion status or the state of a cell before an application starts sending data could allow applications to change their behaviour. 
+					Middleboxes in the network have a number of uses, some which are more beneficial than they are controversial. Collaboration between these network elements and the endpoints could bring about better content distribution. A number of suggestions were given, these included:
 
-					These suggestions could be labeled "Network-to-App", a better approach may be "Network-to-User", to achieve this these ideas would need to be expanded. Other suggestions were to create "hop-to-hop" solutions, which could be more inline with how congestion is managed today, but with greater privacy. 
+					- Mobile Throughput Guidance exchanges data between the network elements and the endpoints via TCP Options. It also allows for gaining a better idea of how the transport protocol behaves and improving user experience further, although the work still needs to evolve. 
+					- SPUD
+					- An API for operators to share congestion status or the state of a cell before an application starts sending data could allow applications to change their behaviour. 
+					- Meaningful Capacity Sharing 
+					- ConEx is a mechanism where senders inform the network about the congestion encountered by previous packets on the same flow, in-band at the IP layer.
+					- Latency versus Bandwith: 
+					- 0-bit
+					- FQ Codel: https://tools.ietf.org/html/draft-ietf-aqm-fq-codel-, being defined in the IETF and should be built into network equipment. some noted if the throuput is stable FQ-codel is very effective, but this may not be true in mobile networks. 
+
+					Many of these suggestions could be labeled "Network-to-App", a better approach may be "Network-to-User", to achieve this these ideas would need to be expanded. Other suggestions were to create "hop-to-hop" solutions, which could be more inline with how congestion is managed today, but with greater privacy. 
+
+					"App-to-Network" style solutions have either existed for a long time by implicit solutions, or explicitly defined but never implemented or properly deployed. Some workshop attendees agreed that applications declaring was quality of service they require was not a good route given the lack of success in the past. 
+
 				</t>
 				<t> 
-					One of the larger issues in the sharing of data is the matter of trust; networks operators find difficulties in relinquishing data for reasons such as revealing competitive information and applications wish to protect their users and only reveal little information to the network. Authentication in that case could be a key design element of any new work, as well as explictness rather than the transparent middleboxes used more recently. Some workshop attendees suggested any exchange of information should be biodirectional, in an effort to improve trust between the elements. 
+					One of the larger issues in the sharing of data is the matter of trust; networks operators find difficulties in relinquishing data for reasons such as revealing competitive information and applications wish to protect their users and only reveal little information to the network. Authentication in that case could be a key design element of any new work, as well as explictness rather than the transparent middleboxes used more recently. Some workshop attendees suggested any exchange of information should be biodirectional, in an effort to improve trust between the elements. A robust incentive framework could provide a solution to the trust issue, or at least help mitigate it. 
 
 					Categorising radio networks will be impossible due to their complexity, but categorising essential network properties could be possible and valuable. 
+
+
 
 					The radio access network is complex and manages a number of realities. Base stations understand many of these realities, and information within these base stations can be of value other entities on the path. Solutions for managing congestion on radio networks should involve the base station if possible. Although many workshop attendees agreed there is a need to understand to base station not all agreed that base station should be part of a future solution. 
 
@@ -198,6 +218,9 @@
 					data info api
 
 					If data exchange solutions are devised attendees agreed that user privacy must be a key element which should be protected and prioritised; as a base-line anything that can be used as a personal identifier should not be used. 
+
+					Kevin Smith: how do AQM and the RRC interact effectively? There is a gap where they are not aware of each other.
+					Jana Iyengar: would like to see work on this item.
 				</t>
 			</section>
 
@@ -254,6 +277,18 @@
 				Some mobile network operators are producing transparency reports covering regulations including lawful intercept. Operators who have done this already are encouraging others to do the same. 
 			</t>
 		</section> <!-- technical response end-->
+
+		<section anchor="solution-requirements" title="Requirements for Future Solutions">
+			<t>
+				encrypted traffic
+				flexibility
+				privacy
+				extensible and efficient traffic management
+				re-think capacity sharing
+				data
+				minimum data only for collaborative work
+			</t>
+		</section> <!-- outcomes end-->
 
 		<section anchor="outcomes-next-steps" title="Outcomes and Next Steps">
 			<t>
