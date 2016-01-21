@@ -182,13 +182,32 @@
 
 			<section anchor="sending-data-up-down" title="Sending Data Up / Down for Network Management Benefits">
 				<t>
-					Text.
+					Middleboxes in the network have a number of uses, some which are more beneficial than they are controversial. Collaboration between these network elements and the endpoints could bring about better content distribution, Mobile Throughput Guidance is one such approach by exchanging data between the network elements and the endpoints via TCP Options. Mobile Throughput Guidance also allows for gaining a better idea of how the transport protocol behaves and improving user experience further, although the work still needs to evolve. An API for operators to share congestion status or the state of a cell before an application starts sending data could allow applications to change their behaviour. 
+
+					These suggestions could be labeled "Network-to-App", a better approach may be "Network-to-User", to achieve this these ideas would need to be expanded. Other suggestions were to create "hop-to-hop" solutions, which could be more inline with how congestion is managed today, but with greater privacy. 
+				</t>
+				<t> 
+					One of the larger issues in the sharing of data is the matter of trust; networks operators find difficulties in relinquishing data for reasons such as revealing competitive information and applications wish to protect their users and only reveal little information to the network. Authentication in that case could be a key design element of any new work, as well as explictness rather than the transparent middleboxes used more recently. Some workshop attendees suggested any exchange of information should be biodirectional, in an effort to improve trust between the elements. 
+
+					Categorising radio networks will be impossible due to their complexity, but categorising essential network properties could be possible and valuable. 
+
+					The radio access network is complex and manages a number of realities. Base stations understand many of these realities, and information within these base stations can be of value other entities on the path. Solutions for managing congestion on radio networks should involve the base station if possible. Although many workshop attendees agreed there is a need to understand to base station not all agreed that base station should be part of a future solution. 
+
+
+
+					data info api
+
+					If data exchange solutions are devised attendees agreed that user privacy must be a key element which should be protected and prioritised; as a base-line anything that can be used as a personal identifier should not be used. 
 				</t>
 			</section>
 
 			<section anchor="transport-layer" title="Transport Layer: Issues, Optimisation and Solutions">
 				<t>
-					Text.
+					TCP was originally devised to work on a specific network model diverse to the scenarios experienced on radio access networks. 
+
+
+
+					Although TCP is often considered as a key issue in the evolution of the stack the main route to solve this may not be a new TCP, but an evolved stack. SPUD and ICN are two suggestions which may help here. QUIC engineers stated that the problems solves by QUIC are general problems, rather than TCP issues. This view was not shared by all attendees of the workshop. Moreover, TCP has had some improvements in the last few years which may mean some of the network lower layers should be investigated to see whether improvements can be made here. 
 				</t>
 			</section>
 
@@ -248,4 +267,9 @@
 	</back>
 </rfc>
 
+
+[Pew2014]:
+http://www.pewinternet.org/2014/11/12/public-privacy-perceptions/ "Mary
+Madden, Public Perceptions of Privacy and Security in the Post-Snowden
+Era, Pew Research, November 12, 2014"
 
