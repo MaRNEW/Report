@@ -37,7 +37,7 @@
 	<middle>
 		<section anchor="intro" title="Introduction">
 			<t>
-				Mobile networks have a set of requirements and properties which places a large emphasis on sophisticated bandwidth optimization. Encryption is increasing on the internet which is a good thing for consumer and business privacy and security. Many existing mobile bandwidth optimization solutions primarily operate on non-encrypted communications; this can lead to performance issues being amplified on mobile networks. Encryption on networks will continue to increase; and with this understanding the workshop aimed to understand how we can solve the issues of bandwidth optimization and performance on radio networks in this encrypted world.
+				Mobile networks have a set of requirements and properties which places a large emphasis on sophisticated bandwidth optimization. Encryption is increasing on the internet which is positive for consumer and business privacy and security. Many existing mobile bandwidth optimization solutions primarily operate on non-encrypted communications; this can lead to performance issues being amplified on mobile networks. Encryption on networks will continue to increase; and with this understanding the workshop aimed to understand how we can solve the issues of bandwidth optimization and performance on radio networks in this encrypted world.
 			</t>
 
 			<section anchor="bandwidth-optimization" title="Understanding “Bandwidth Optimization”">
@@ -51,7 +51,7 @@
 			          <t>Business-related topics such as content delivery arrangements with specific content providers.</t>
 			    </list>
 			    <t>
-					Many of these functions can continue as they’re performed today, even with more encryption. Others traditionally inspect parts of the communication that are encrypted, and will have to be done differently in a more-encrypted Internet.
+					Many of these functions can continue as they’re performed today, even with more encryption. Others use methods which require them to inspect parts of the communication that are encrypted, and these will have to be done differently in an encrypted Internet.
 				</t>
 				<t>
 					Finally, while not strictly speaking traffic management, some networks employ policy-based filtering (e.g., requested parental controls) and all networks support some form of legal interception functionality per applicable laws.
@@ -61,7 +61,7 @@
 			<section anchor="topics" title="Topics">
 			</section>
 				<t>
-					For this workshop we would like to consider topics that speak to these questions, including the following:
+					The workshop aimed to answer questions including:
 				</t>
 				<list style="symbols">
 					<t>Understanding the bandwidth optimization use cases particular to radio networks</t>
@@ -74,33 +74,35 @@
 					<t>Cooperative methods of bandwidth optimization and issues associated with these</t>
 				</list>
 				<t>
-					The outcome of the workshop will be architectural and engineering guidance on future work in the area, published as an IAB workshop report, based on discussion of proposed approaches. We will also explore possible areas for standardization, e.g. new protocols that can aid bandwidth optimization whilst ensuring user security inline with new work in the transport layer.
+					The further aim was to gather architectural and engineering guidance on future work in the bandwidth optimisation area based on the discussions around the proposed approaches. The workshop also explored possible areas for standardization, e.g. new protocols that can aid bandwidth optimization whilst ensuring user security inline with new work in the transport layer.
 				</t>
 		</section>
 		<section anchor="this-report" title="Organization of this report">
 			<t>
-				This workshop report summarizes the contributions to and discussions at the workshop, organized by topic.  The workshop began with scene setting topics which covered the issues around deploying encryption, the increased need for privacy on the internet and setting a clear understanding that ciphertext should remain unbroken. Later sessions focused on key solution areas; these included evolution on the transport layer and sending data up or down the path. A session on application layers and CDNs aimed to highlight both issues and solutions experienced on the application layer. The workshop ended with a session dedicated to technical response to regulation with regards to encryption. The contributing documents were split between identifying the issues experienced with encryption on radio networks and suggested solutions. Of the solutions suggested some focused on transport evolution, some on trusted middleboxes and others on collaborative data exchange. Solutions were discussed within the sessions. All accepted position papers and detailed transcripts of discussion are available at https://www.iab.org/activities/workshops/marnew/.
+				This workshop report summarizes the contributions to and discussions at the workshop, organized by topic.  The workshop began with scene setting topics which covered the issues around deploying encryption, the increased need for privacy on the internet and setting a clear understanding that ciphertext should remain unbroken. Later sessions focused on key solution areas; these included evolution on the transport layer and sending data up or down the path. A session on application layers and CDNs aimed to highlight both issues and solutions experienced on the application layer. The workshop ended with a session dedicated to technical response to regulation with regards to encryption. The contributing documents were split between identifying the issues experienced with encryption on radio networks and suggested solutions. Of the solutions suggested some focused on transport evolution, some on trusted middleboxes and others on collaborative data exchange. Solutions were discussed within the sessions. All accepted position papers and detailed transcripts of discussion are available at [MARNEW].
 			</t>
 			<t>
    				The outcomes of the workshop are discussed in Section [X], and discuss progress after the workshop toward each of the identified work items as of the time of publication of this report.
    			</t>
+   			<t>
+   				Although policy related topics were out of scope for this workshop they were infrequently referred to. Report readers should be reminded that this workshop did not and did not aim to discuss policy or policy recommendations. 
 		</section>
 
 		<section anchor="ipr" title="Use of Note Well and Charter House Rule">
 			<t>
-				Text. 
+				The workshop was conducted under the IETF [NOTE WELL] with the exception of the "Technical Analysis and Response to Potential Regulatory Reaction" session which was conducted under [CHATHAM HOUSE RULE].  
 			</t>
 		</section>
 
 		<section anchor="ietf-gsma" title="IETF and GSMA">
 			<t>
-				Could add something here about the differences in IETF and GSMA (not overlapping what is said in next section). 
-
-				Traditionally mobile networks have managed different applications and services based on the resources available and priorities given; for instance, emergency services have a top priority, data has a lower prioirty and voice services are somewhere inbetween. 3GPP defined the PCC-QoS mechanism to support this functionality; encryption breaks this standard 
-
-					INCLUDE THIS? causing some issues such as bad handovers between radio network cells, the release of the "wrong service" (as defined by the 3GPP standard) and stopping middleboxes from working. 
-
-
+				The IETF and GSMA have divergent working pratices, standards and processes. IETF is an open organisation with community driven standards with the key aim of functionality and security for the internet's users, the GSMA is membership based and serves the needs of its membership base most of whom are mobile network operators. 
+			</t>
+			<t>
+				Unlike IETF, GSMA makes few standards. Within the telecommunications industry standards are set in various divergent groups depending on their purpose. Perhpas of most relevance to the bandwidth optimisation topic here is the work of the [3GPP] which work on radio network and core network standards with their members which include mobile operators and original equipment manufacturers.
+			</t>
+			<t>
+				One of the [3GPP] standards relevant to this workship is PCC-QoS. Traditionally mobile networks have managed different applications and services based on the resources available and priorities given; for instance, emergency services have a top priority, data has a lower prioirty and voice services are somewhere inbetween. [3GPP] defined the PCC-QoS mechanism to support this functionality, some of which cannot occur for encrypted communications.
 			</t>
 		</section>
 		
@@ -113,7 +115,7 @@
 					The telecommunications industry and internet standards are extremely different in terms of ethos and business practices. Both industries drive technical standards in their domain and build technical solutions with some policy-driven use cases. These technologies, use cases and technical implementations are different; not only this but motivators between the two industries are also diverse.
 				</t>
 				<t>
-					To ensure all attendees were aligned with contributing to discussions and driving solutions this Scene Setting session worked on generating a clear scope with all attendees involved. In short: it was agreed that ciphertext should not be broken by any solution, that the radio access network (RAN) is different and does experience issues with increased encrypted traffic, that we need to understand what those problems are precisely and that our goal is to improve user experience on the Internet. Technical solutions for regulation was not in scope. The full scope is below.
+					To ensure all attendees were aligned with contributing to discussions and driving solutions this Scene Setting session worked on generating a clear scope with all attendees involved. In short: it was agreed that ciphertext should not be broken by any solution, that the radio access network (RAN) is different and does experience issues with increased encrypted traffic, that we need to understand what those problems are precisely and that our goal is to improve user experience on the Internet. Technical solutions for regulation was not in scope. The full scope is given below.
 				</t>
 
 				<section anchor="scope" title="Scope">
@@ -140,10 +142,10 @@
 
 				<section anchor="encryption-up-and-ran-differences" title="Encryption Statistics and Radio Access Network Differences">
 					<t>
-						Attendees were shown that encrypted content is reaching around 50% according to recent statistics [LINK TO MOZ AND AKAMAI SLIDES FROM SAAG]. IETF are also working on encryption on lower layers, for example TCP encryption within the TCPINC Working Group. 
+						Attendees were shown that encrypted content is reaching around 50% according to recent statistics [STATE BROWSER] and [STATE SERVER]. The IAB are encouraging all IETF groups to consider encryption by default on their new protocol work and the IETF are also working on encryption on lower layers, for example TCP encryption within the [TCPINC] Working Group. The aims of these items of work are greater security and privacy for users and their data.
 					</t>						
 					<t>
-						Some middlebox which exist on operator networks today work under the assumption that they are "trusted"; but qualifying trust is difficult and should not be assumed. Some interesting use cases exist with these middleboxes; such as anti-spam and malware, but these need to be balanced against their ability to open up cracks in the network for attacks such as pervasive monitoring. Some needs to improve the radio access network quality of service could come from increasing radio access network cells ("Base Stations"), but this adds to radio pollution; this shows the balancing act when deivising radio access network architecture.
+						Within telecommunications middleboxes exist on operator networks which have previously considered themselves trusted; but qualifying trust is difficult and should not be assumed. Some interesting use cases exist with these middleboxes; such as anti-spam and malware, but these need to be balanced against their ability to open up cracks in the network for attacks such as pervasive monitoring. Some needs to improve the radio access network quality of service could come from increasing radio access network cells ("Base Stations"), but this adds to radio pollution; this shows the balancing act when deivising radio access network architecture.
 					</t>
 				</section>
 			</section>
@@ -166,7 +168,7 @@
 					Solutions of how to improve delivery of encrypted content could affect some of all of the privacy benefits that encryption brings. Understanding user needs and desires for privacy is therefore important when designing these solutions. 
  				</t>
   				<t>
-					From a recent study [LINK] 64% of users said concerns over privacy have increased, 67% of mobile internet users would like to do more to protect their privacy. The W3C and IETF have both responded to user desires for better privacy by recommending end-to-end encryption for new protocols and web technologies. Within the W3C new security standards are emerging and the design principles for HTML hold that users are the stakeholders with most priority, followed by implementors and other stakeholders, further inforcing the "user first" principle. Users also have certain security expectations from particular contexts, and sometimes use new technologies to further protect their privacy even if those technologies weren't initially developed for that purpose.
+					From a recent study [Pew2014] 64% of users said concerns over privacy have increased, 67% of mobile internet users would like to do more to protect their privacy. The W3C and IETF have both responded to user desires for better privacy by recommending encryption for new protocols and web technologies. Within the W3C new security standards are emerging and the design principles for HTML hold that users are the stakeholders with most priority, followed by implementors and other stakeholders, further inforcing the "user first" principle. Users also have certain security expectations from particular contexts, and sometimes use new technologies to further protect their privacy even if those technologies weren't initially developed for that purpose.
  				</t>
  				<t>
  					Technologies which can impact user privacy sometimes do this ignorant of the privacy implications or incorrectly assume that the benefits users gain from the new technology outweigh the loss of private information. Any new technology which introduces bad security vectors will be used by attackers. If these technologies are necessary they should be opt-in. 
@@ -190,47 +192,47 @@
 				<t>
 					Middleboxes in the network have a number of uses, some which are more beneficial than they are controversial. Collaboration between these network elements and the endpoints could bring about better content distribution. A number of suggestions were given, these included:
 
-					- Mobile Throughput Guidance exchanges data between the network elements and the endpoints via TCP Options. It also allows for gaining a better idea of how the transport protocol behaves and improving user experience further, although the work still needs to evolve. 
-					- SPUD
-					- An API for operators to share congestion status or the state of a cell before an application starts sending data could allow applications to change their behaviour. 
-					- Meaningful Capacity Sharing 
-					- ConEx is a mechanism where senders inform the network about the congestion encountered by previous packets on the same flow, in-band at the IP layer.
-					- Latency versus Bandwith: 
-					- 0-bit
-					- FQ Codel: https://tools.ietf.org/html/draft-ietf-aqm-fq-codel-, being defined in the IETF and should be built into network equipment. some noted if the throuput is stable FQ-codel is very effective, but this may not be true in mobile networks. 
-
-					Many of these suggestions could be labeled "Network-to-App", a better approach may be "Network-to-User", to achieve this these ideas would need to be expanded. Other suggestions were to create "hop-to-hop" solutions, which could be more inline with how congestion is managed today, but with greater privacy. 
-
+					- Mobile Throughput Guidance: exchanges data between the network elements and the endpoints via TCP Options. It also allows for gaining a better idea of how the transport protocol behaves and improving user experience further, although the work still needs to evolve. 
+					- SPUD: a UDP-based encapsulation protocol to allow explicit cooperation with middleboxes while using new, encrypted transport protocols.
+					- Network Status API: An API for operators to share congestion status or the state of a cell before an application starts sending data could allow applications to change their behaviour. 
+					- Traffic classification: classfying traffic and adding this as metadata for analysis throughout the network. This idea has trust and privacy implications. 
+					- ConEx: a mechanism where senders inform the network about the congestion encountered by previous packets on the same flow, in-band at the IP layer.
+					- Latency versus Bandwith: allowing the content provider to indicate whether a better bandwidth or lower latency is of greater priority and allowing the network to react. Where this bit resides and how to authenticate it would need to be decided. 
+					- No network management tools: disabling all network management tools from the network and allow the protocols to manage congestion alone. 
+					- FlowQueue Codel: a hybrid packet scheduler/AQM algorithm, aiming to reduce bufferbloat and latency. FQ-CoDel mixes packets from multiple flows and reduces the impact of head of line blocking from bursty traffic [FQ CODEL].
+				</t>
+				<t>
+					Many of these suggestions could be labeled "Network-to-App", a better approach may be "Network-to-User", to achieve this these ideas would need to be expanded. Others aim to create "hop-to-hop" solutions, which could be more inline with how congestion is managed today, but with greater privacy IMPLICATIONS. 
+				</t>
+				<t>
 					"App-to-Network" style solutions have either existed for a long time by implicit solutions, or explicitly defined but never implemented or properly deployed. Some workshop attendees agreed that applications declaring was quality of service they require was not a good route given the lack of success in the past. 
 
 				</t>
-				<t> 
-					One of the larger issues in the sharing of data is the matter of trust; networks operators find difficulties in relinquishing data for reasons such as revealing competitive information and applications wish to protect their users and only reveal little information to the network. Authentication in that case could be a key design element of any new work, as well as explictness rather than the transparent middleboxes used more recently. Some workshop attendees suggested any exchange of information should be biodirectional, in an effort to improve trust between the elements. A robust incentive framework could provide a solution to the trust issue, or at least help mitigate it. 
-
-					Categorising radio networks will be impossible due to their complexity, but categorising essential network properties could be possible and valuable. 
-
-
-
-					The radio access network is complex and manages a number of realities. Base stations understand many of these realities, and information within these base stations can be of value other entities on the path. Solutions for managing congestion on radio networks should involve the base station if possible. Although many workshop attendees agreed there is a need to understand to base station not all agreed that base station should be part of a future solution. 
-
-
-
-					data info api
-
-					If data exchange solutions are devised attendees agreed that user privacy must be a key element which should be protected and prioritised; as a base-line anything that can be used as a personal identifier should not be used. 
-
-					Kevin Smith: how do AQM and the RRC interact effectively? There is a gap where they are not aware of each other.
-					Jana Iyengar: would like to see work on this item.
-				</t>
+				<section anchor="trust-and-networks" title="Trust and the Mobile Network Complexities">
+					<t> 
+						One of the larger issues in the sharing of data is the matter of trust; networks operators find difficulties in relinquishing data for reasons such as revealing competitive information and applications wish to protect their users and only reveal little information to the network. Authentication in that case could be a key design element of any new work, as well as explictness rather than the transparent middleboxes used more recently. Some workshop attendees suggested any exchange of information should be biodirectional, in an effort to improve trust between the elements. A robust incentive framework could provide a solution to the trust issue, or at least help mitigate it. 
+					</t>
+					<t>
+						The radio access network is complex and manages a number of realities. Base stations understand many of these realities, and information within these base stations can be of value other entities on the path. Solutions for managing congestion on radio networks should involve the base station if possible. For instance, understanding how the Radio Resource Controller and AQM interact (or don't interact) could provide valuable information for solving issues. Although many workshop attendees agreed that even though there is a need to understand the base station not all agreed that the base station should be part of a future solution. 
+					</t>
+					<t>
+						Some suggested solutions were based on network categorisation and providing this information to the protocols or endpoints. Categorising radio networks could be impossible due to their complexity, but categorising essential network properties could be possible and valuable. 
+					</t>
+				</section>
 			</section>
 
 			<section anchor="transport-layer" title="Transport Layer: Issues, Optimisation and Solutions">
 				<t>
-					TCP was originally devised to work on a specific network model diverse to the scenarios experienced on radio access networks. 
-
-
-
-					Although TCP is often considered as a key issue in the evolution of the stack the main route to solve this may not be a new TCP, but an evolved stack. SPUD and ICN are two suggestions which may help here. QUIC engineers stated that the problems solves by QUIC are general problems, rather than TCP issues. This view was not shared by all attendees of the workshop. Moreover, TCP has had some improvements in the last few years which may mean some of the network lower layers should be investigated to see whether improvements can be made here. 
+					TCP was originally devised to work on a specific network model diverse to the scenarios experienced on radio access networks. Furthermore new network elements have been introduced (NATs and network devices with larger buffers creating bufferbloat) as well as considerable peer-to-peer traffic. Consequently the transport layer today has greater requirements than what TCP can cater for. TCP has other issues as well; too many services rely on TCP and only TCP, blocking new protocols and solutions. This means that true innovation on the transport layer becomes hard as deployment it met with more issues rather than just building a new protocol.
+				</t>
+				<t>
+					The IETF is trying to solve these issues through the "Stack Evolution" programme, and the first step in this programme is to collect data. Network and content providers can provide data including: the cost of encryption, the advantages of network management tools, the deployment of protocols and the effects if network management tools are disabled. Network operators do not tend to reveal network information mostly for competition reasons and so is unlikely to donate this information freely to IETF. The GSMA is in the position to collect this data and anonymise it and bring this to IETF which should alleviate the network operator worries but still provide IETF with some usebale data.
+				</t>
+				<t>
+					A considerable amount of work has aready been done on TCP. There has been a huge amount of innovation in congestion control; although congestion is usually detected by detecting loss, and better methods based on detecting congestion would be beneficial.		
+				</t>
+				<t>
+					Furthemore, although TCP is often considered as a key issue in the evolution of the stack the main route to solve this may not be a new TCP, but an evolved stack. SPUD and ICN are two suggestions which may help here. QUIC engineers stated that the problems solves by QUIC are general problems, rather than TCP issues. This view was not shared by all attendees of the workshop. Moreover, TCP has had some improvements in the last few years which may mean some of the network lower layers should be investigated to see whether improvements can be made here. 
 				</t>
 			</section>
 
@@ -241,16 +243,13 @@
 				Many discussions on the effects of encrypted traffic on radio access networks happen between implementers and the network operators; this session aimed to gather the opinions of the content and caching providers including their experiences running over mobile networks, the experience their users expect, and what they would like to achieve by working with or using the mobile network. 
 			</t>
 			<t>
-				Content providers assume the mobile networks are standard compliant. When the network is not standards compliant (e.g. using non standards compliant intermediaries) content providers can experience real costs as users contact their support centres to report issues which are difficult to test for and build upon. 
-			</t>
-			<t>
-				CDNs are understood to be a trusted deliver of content and have done great work in fixed networks. Now traffic is moving more to mobile networks there is a need to place caches at the edge of the network (e.g. in the Gi LAN or the radio network) within the mobile network. Places caches at the edge of the mobile network is a solution, but requires standards developed by content providers and mobile network operators. The CNDi working group at IETF aims to allow global CDNs to interoperate with mobile CDNs; but this causes huge trust issues for the caching of encrypted data between these CDNs. Some CDNs are experimenting with "Keyless SSL" to enable safer storage of content without passing private keys to the CDN. Blind Caching is another proposal aimed at caching encrypted content closer to the user and managing the authentication at the original content provider servers. 
-			</t>
-			<t>
-				Content providers explained how even though this workshop cited encrypted data over radio access networks as the main issue the real issue is network management generally, and all actors (applications providers, networks and devices) need to work together to overcome theese general network management issues. 
+				Content providers explained how even though this workshop cited encrypted data over radio access networks as the main issue the real issue is network management generally, and all actors (applications providers, networks and devices) need to work together to overcome theese general network management issues. Content providers explained how they assume the mobile networks are standard compliant. When the network is not standards compliant (e.g. using non standards compliant intermediaries) content providers can experience real costs as users contact their support centres to report issues which are difficult to test for and build upon. 
 			</t>
 			<t>
 				Content providers cited other common issues concerning data traffic over mobile networks. Data caps cause issues for users; users are confused about how data caps work or are unsure how expensive media is and how much data it consumes. DNS and DNS caching cause unpredictable results. Developers build products on networks not indicative of the networks their customers are using and not every organisation has the finances to build a caching infrastructure.
+			</t>
+			<t>
+				Strongly related to content providers, CDNs are understood to be a trusted deliver of content and have shown great success in fixed networks. Now traffic is moving more to mobile networks there is a need to place caches at the edge of the network (e.g. in the Gi LAN or the radio network) within the mobile network. Places caches at the edge of the mobile network is a solution, but requires standards developed by content providers and mobile network operators. The CNDi working group at IETF aims to allow global CDNs to interoperate with mobile CDNs; but this causes huge trust issues for the caching of encrypted data between these CDNs. Some CDNs are experimenting with "Keyless SSL" to enable safer storage of content without passing private keys to the CDN. Blind Caching is another proposal aimed at caching encrypted content closer to the user and managing the authentication at the original content provider servers. 
 			</t>
 			<t>
 				At the end of the session the panelists were asked to identify one key collaborative work item, these were: evolving caching to cache encrypted content, uing one-bit for latency / bandwidth trade-off (explained below), better collaboration between the network and application, better metrics to aid bug solving and innovation, and indications from the network to allow the application to adapt. 
@@ -262,31 +261,73 @@
 				This session was conducted under Chatham House Rule. The session aimed to discuss regulatory and politcal issues; but not their worth or need, rather to understand the laws that exist and how technologists can properly respond to these. 
 			</t>
 			<t>
-				Mobile networks are regulated, compliance is mandatory (can result in service license revocation) and can incur costs on the mobile network operator. Regulation does vary geographically. Some regulations are court orders, others are "block lists" of websites such as the Internet Watch Foundation list. Operators are not expected to decrypt sites, so those identified sites which are encrypted will not be blocked. 
+				Mobile networks are regulated, compliance is mandatory (and can result in service license revocation in some nations round the world) and can incur costs on the mobile network operator. Regulation does vary geographically. Some regulations are court orders, others are "block lists" of websites such as the Internet Watch Foundation list [IWF]. Operators are not expected to decrypt sites, so those identified sites which are encrypted will not be blocked. 
 			</t>
 			<t>
-				Parental control-type filters on the network are easily bypassed, vastly limiting their effectiveness. Better solutions would allow for users to easily set these restirctions themselves. Other regulations are also hard to meet - such as user data patterns, or will become harder to collect - such as IoT cases. Most attendees agreed that if the governments cannot get the information from network operators they will approach the content providers. Some governments are aware of the impact of encryption and are working with or trying to work with content providers. The IAB have concluded blocking and filtering can be done at the endpoint of the communication.
+				Parental control-type filters also exist on the network and are easily bypassed today, vastly limiting their effectiveness. Better solutions would allow for users to easily set these restirctions themselves. Other regulations are also hard to meet - such as user data patterns, or will become harder to collect - such as IoT cases. Most attendees agreed that if the governments cannot get the information from network operators they will approach the content providers. Some governments are aware of the impact of encryption and are working with or trying to work with content providers. The IAB have concluded blocking and filtering can be done at the endpoint of the communication.
 			</t>
 			<t>
-				If technical solutions do exist technologists shuld ensure that they have the ability to be easily switched off. 
-			</t>
-			<t>
-				These regulations do not always apply to the internet, and the internet community is not always aware of their existance. Collectively the internet community can work with GSMA and 3GPP and act collectively to alleviate the risk imposed by encrypted traffic for lawful intercept.
+				These regulations do not always apply to the internet, and the internet community is not always aware of their existance. Collectively the internet community can work with GSMA and 3GPP and act collectively to alleviate the risk imposed by encrypted traffic for lawful intercept. The suggestion from attendees was that if any new technical solutions built should have the ability to be easily switched off. 
 			</t>
 			<t>
 				Some mobile network operators are producing transparency reports covering regulations including lawful intercept. Operators who have done this already are encouraging others to do the same. 
 			</t>
 		</section> <!-- technical response end-->
 
-		<section anchor="solution-requirements" title="Requirements for Future Solutions">
+		<section anchor="solution-suggestions-requirements" title="Requirements and Suggestions for Future Solutions">
 			<t>
-				encrypted traffic
-				flexibility
-				privacy
+				Based on the talks and discussions throughout the workshop a set of requirements and suggested solutions has been collected. This is not an exhaustve list.
+
+				Encrypted Traffic: any solution should encourage and support encrypted traffic.
+				Flexibility: radio access network qualities vary vastly and different network needs in content can be identified, so any new solution should be flexible to either the network type or content type or both.
+				Privacy: new solutions should not introduce ways where information can be discovered flows and attribute them to users. 
 				extensible and efficient traffic management
-				re-think capacity sharing
-				data
-				minimum data only for collaborative work
+				Minimum data only for collaborative work: user data, app data and network data all needs protecting, so new solutions should use the minimum information to make a working solution.
+
+				A collection of solutions suggested throughout the workshop is given below. These solutions haven't been matched to the requirements above, so this step will need to come later.
+
+				
+				
+				Evolving TCP (or evolving transport)
+					Congestion Control
+					SPROUT (MIT)
+					PCC (Performance & Congestion Control)
+			
+				
+				CDNs / Caches in the network
+					Blind Caching
+					CDN improvements
+
+				Mobile Throughput Guidance
+				One bit for latency bandwidth tradeoff
+
+				Base Station
+				Controller that can adapt to a radio environment and provide a better experience, and preserve E2E
+				Identify traffic types via 5-tuple
+				Heuristics (for best effort only?)
+				
+				Small amount of data from network to user (ECN) and AQM
+				API for app to query network, or vice versa
+				
+				Standard approach for operator to offer services to Content Providers
+				
+				Sharing information hop by hop
+				
+				
+				Trust model / framework (e.g. for spud)
+				Keyless SSL
+				Meaningful capacity sharing; reacting correctly to wireless link layer condition
+				5G
+
+				Metrics and metric standards
+					Testing / Debugging
+				
+
+				IETF gain an understanding of RAN
+				Reviews and comments on 3GPP perspective
+				How to do congestion controlling in RAN
+
+				Better Collaboration
 			</t>
 		</section> <!-- outcomes end-->
 
@@ -302,9 +343,24 @@
 	</back>
 </rfc>
 
+[MARNEW]: https://www.iab.org/activities/workshops/marnew/
+
+[NOTE WELL] https://www.ietf.org/about/note-well.html
+
+[CHATHAM HOUSE RULE] https://www.chathamhouse.org/about/chatham-house-rule
+
+[3GPP] http://www.3gpp.org/
+
+[TCPINC] https://datatracker.ietf.org/wg/tcpinc/charter/
+
+[STATE BROWSER] State of Transport Security for HTTP - browsers https://www.ietf.org/proceedings/93/slides/slides-93-saag-3.pdf
+[STATE SERVER] State of Transport Security for HTTP - Server https://www.ietf.org/proceedings/93/slides/slides-93-saag-4.pdf
 
 [Pew2014]:
 http://www.pewinternet.org/2014/11/12/public-privacy-perceptions/ "Mary
 Madden, Public Perceptions of Privacy and Security in the Post-Snowden
 Era, Pew Research, November 12, 2014"
 
+[FQ CODEL] https://tools.ietf.org/html/draft-ietf-aqm-fq-codel-03#page-4
+
+[IWF] https://www.iwf.org.uk/
