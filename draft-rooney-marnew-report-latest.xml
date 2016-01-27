@@ -277,90 +277,209 @@
 		<section anchor="solution-suggestions-requirements" title="Requirements and Suggestions for Future Solutions">
 			<t>
 				Based on the talks and discussions throughout the workshop a set of requirements and suggested solutions has been collected. This is not an exhaustve list.
-
-				Encrypted Traffic: any solution should encourage and support encrypted traffic.
-				Flexibility: radio access network qualities vary vastly and different network needs in content can be identified, so any new solution should be flexible to either the network type or content type or both.
-				Privacy: new solutions should not introduce ways where information can be discovered flows and attribute them to users. 
-				extensible and efficient traffic management
-				Minimum data only for collaborative work: user data, app data and network data all needs protecting, so new solutions should use the minimum information to make a working solution.
-
-				A collection of solutions suggested throughout the workshop is given below. These solutions haven't been matched to the requirements above, so this step will need to come later.
-
-				
-				
-				Evolving TCP (or evolving transport)
-					Congestion Control
-					SPROUT (MIT)
-					PCC (Performance & Congestion Control)
-			
-				
-				CDNs / Caches in the network
-					Blind Caching
-					CDN improvements
-
-				Mobile Throughput Guidance
-				One bit for latency bandwidth tradeoff
-
-				Base Station
-				Controller that can adapt to a radio environment and provide a better experience, and preserve E2E
-				Identify traffic types via 5-tuple
-				Heuristics (for best effort only?)
-				
-				Small amount of data from network to user (ECN) and AQM
-				API for app to query network, or vice versa
-				
-				Standard approach for operator to offer services to Content Providers
-				
-				Sharing information hop by hop
-				
-				
-				Trust model / framework (e.g. for spud)
-				Keyless SSL
-				Meaningful capacity sharing; reacting correctly to wireless link layer condition
-				5G
-
-				Metrics and metric standards
-					Testing / Debugging
-				
-
-				IETF gain an understanding of RAN
-				Reviews and comments on 3GPP perspective
-				How to do congestion controlling in RAN
-
-				Better Collaboration
 			</t>
+			<list style="symbols">
+				<t>Encrypted Traffic: any solution should encourage and support encrypted traffic.</t>
+				<t>Flexibility: radio access network qualities vary vastly and different network needs in content can be identified, so any new solution should be flexible to either the network type or content type or both.</t>
+				<t>Privacy: new solutions should not introduce ways where information can be discovered flows and attribute them to users. </t>
+				<t>Minimum data only for collaborative work: user data, app data and network data all needs protecting, so new solutions should use the minimum information to make a working solution.</t>
+			</list>
+			<t>
+				A collection of solutions suggested throughout the workshop is given below. These solutions haven't been matched to the requirements above, so this step will need to come later.
+			</t>
+			<list style="symbols">
+				<t>
+					Evolving TCP or evolution on the transport layer: this could take a number of forms and some of this work is already existing within IETF. Other suggestions include:
+				</t>
+				<list style="symbols">
+					<t>Congestion Control: many attendees cited congestion control as a key issue, further analysis, investigation and work could be done here. </t>
+					<t>SPROUT: research at MIT which is a transport protocol for interactive applications that desire high throughput and low delay. [SPROUT]</t>
+					<t>PCC: Performance-oriented Congestion Control: is a new architecture that aims for consistent high performance even in challenging scenarios. PCC enpoints observe the connection between their actions and their known performance, which allows them to adapt their actions. [PCC]</t>
+				</list>
+			
+				<t>
+					CDNs and Caches: placing caches closer to the mobile user or making more intelligent CDNs would result in faster content delivery and less train on the network. Related work includes:
+				</t>
+				<list style="symbols">
+					<t>Blind Caching: a proposal for caching of encrypted content.</t>
+					<t>CDN improvements: including keyless SSL and better CDN placement. </t>
+				</list>
+				<t>
+					Mobile Throughput Guidance: a mechanism and protocol elements that allow the cellular network to provide near real-time information on capacity available to the TCP server. [MTG]
+				</t>
+				<t>
+					One bit for latency / bandwidth tradeoff: using one bit to identify whether a stream prefers low latency at the expense of throughput. This rids solutions of the trust issue as applications will need to select the best scenario for their traffic type. 
+				</t>
+				<t>
+					Base Station: some suggestions involved "using the Base Station", but this was not defined in detail. The Base Station holds the Radio Resource Controller and scheduler which could provide either a place to host solutions or data from the Base Station could help in devising new solutions. 
+				</t>
+				<t>
+					Identify traffic types via 5-tuple: information from the 5-tuple could provide understanding of the traffic type which network management could then be applied.
+				</t>
+				<t>
+					Heuristics: Networks can sometimes identify traffic types through specifics such as data flow rate and then apply network management to these identified flows. This is not recommended as categorisations can be incorrect. 
+				</t>
+				<t>
+					APIs: An API for operators to share congestion status or the state of a cell before an application starts sending data could allow applications to change their behaviour. Alternatively an API could provide the network with some information on the data type to provide network management to, although this method exposes privacy issues.
+				</t>
+				<t>
+					Standard approach for operator to offer services to Content Providers: mobile network operators could provide caching services or other services for content providers to use for faster and smoother content delivery. 
+				</t>
+				<t>
+					AQM [AQM] and ECN [ECN] deployments: queueing and congestion management methods have existed for sometime in the form of AQM, ECN and others which can help the transport and internet layer adapt to congestion faster.
+				</t>
+				<t>
+					Trust Model or Trust Framework: some solutions in this area (e.g. SPUD) have a reliance on trust when content providers or the network are being asked to add classifiers to their traffic.
+				</t>
+				<t>
+					Keyless SSL: allows content providers to maintain their private keys on a "key server" and host the content elsewhere (e.g. on a CDN). This could become standardised in IETF. [LURK]
+				</t>
+				<t>
+					Meaningful capacity sharing: including the ConEx [CONEX] work which exposes information about congestion to the network nodes.
+				</t>
+				<t>
+					Hop-by-hop: some suggestions offer hop-by-hop methods allowing nodes to adapt flow given the qualities of the networks around them and the congestion they're experiencing. 
+				</t>
+				<t>
+					Metrics and metric standards: in order to evolve current protocols to be best suited to today's networks data is needed on the current network situations, protocol deployments, packet traces and middlebox behaviour. Futher than this proper testing and debugging on networks could provide great insight for stack evolution.
+				</t>
+				<t>
+					5G: Mobile operator standards bodies are in the process of setting the requirements for 5G, requirements for network management could be added.
+				</t>
+			</list>
+			<t>
+				In the workshop attendees identified other areas where greater understand could help the standards process. These were identified as:
+			</t>
+				<list style="symbols">
+					<t>Greater understanding of the RAN at IETF</t>
+					<t>Reviews and comments on 3GPP perspective</t>
+					<t>How to do congestion controlling in RAN</t>
+				</list>
+			<section anchor="better-collaboration" title="Better Collaboration">
+				<t>
+					Throughout the workshop attendees placed emphasis on the need for better collaboration between the IETF and telecommunications bodies and organisations. The workshop was one such way to achieve this, but the good work and relationships built in the workshop should continue so the two groups can work on solutions which are better for both technologies and users.
+				</t>
+			</section>
 		</section> <!-- outcomes end-->
 
-		<section anchor="outcomes-next-steps" title="Outcomes and Next Steps">
+		<section anchor="next-steps" title="Next Steps">
 			<t>
-				See next steps email.
+				The next steps for MaRNEW attendees are to begin work on a select list of the above recommended solutions and other suggestions within the IETF and within other organisations. At IETF95 the ACCORD BoF will be held which will bring the workshop discussion to the wider IETF attendance and select key areas to progress on; these are likely to be definitions of the metrics to be collected, more information on the stack evolution ideas and their impact to network management, Mobile Throughput Guidance evolution, evolution of the Blind Caching work and draft definitions of the "1 bit for latency / bandwidth tradeoff" idea. As identified in the "Better Collaboration" section together we need to ensure that both groups continue the positive relationship to move these ideas forward into being real and workable solutions and both groups need to understand that even though collaboration between the operator network and the internet is of great importance the item of most importance is the experience and security for the users using these services. 
 			</t>
 		</section> <!-- outcomes end-->
 
 	</middle>
 	
 	<back>
+		<references title="Informative References">
+	      <reference anchor="MARNEW" target="https://www.iab.org/activities/workshops/marnew/">
+	        <front>
+	          <title>MaRNEW Workshop Website</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="NOTE WELL" target="https://www.ietf.org/about/note-well.html">
+	        <front>
+	          <title>IETF Note Well</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="CHATHAM HOUSE RULE" target="https://www.chathamhouse.org/about/chatham-house-rule">
+	        <front>
+	          <title>Chatham House Rule</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="3GPP" target="http://www.3gpp.org/">
+	        <front>
+	          <title>3GPP Website</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="TCPINC" target="https://datatracker.ietf.org/wg/tcpinc/charter/">
+	        <front>
+	          <title>TCPInc</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="STATE BROWSER" target="https://www.ietf.org/proceedings/93/slides/slides-93-saag-3.pdf">
+	        <front>
+	          <title>State of Transport Security for HTTP - browsers</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="STATE SERVER" target="https://www.ietf.org/proceedings/93/slides/slides-93-saag-4.pdf">
+	        <front>
+	          <title>State of Transport Security for HTTP - Server</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="Pew2014" target="http://www.pewinternet.org/2014/11/12/public-privacy-perceptions/">
+	        <front>
+	          <title>Mary Madden, Public Perceptions of Privacy and Security in the Post-Snowden Era, Pew Research, November 12, 2014</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="FQ CODEL" target="https://tools.ietf.org/html/draft-ietf-aqm-fq-codel-03#page-4">
+	        <front>
+	          <title>FQ Codel</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="IWF" target="https://www.iwf.org.uk/">
+	        <front>
+	          <title></title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="IWF" target="https://www.iwf.org.uk/">
+	        <front>
+	          <title>Internet Watch Foundation</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="SPROUT" target="http://alfalfa.mit.edu/">
+	        <front>
+	          <title>SPROUT</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="PCC" target="http://modong.github.io/pcc-page/">
+	        <front>
+	          <title>PCC</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="MTG" target="https://datatracker.ietf.org/doc/draft-flinck-mobile-throughput-guidance/">
+	        <front>
+	          <title>Mobile Throughput Guidance</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="LURK" target="https://www.ietf.org/mailman/listinfo/lurk">
+	        <front>
+	          <title>LURK</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="AQM" target="https://datatracker.ietf.org/wg/aqm/documents/">
+	        <front>
+	          <title>AQM</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="ECN" target="https://tools.ietf.org/html/rfc3168">
+	        <front>
+	          <title>ECN</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	      <reference anchor="CONEX" target="https://datatracker.ietf.org/doc/rfc6789/">
+	        <front>
+	          <title>ConEx</title>
+	          <date month="" year="" />
+	        </front>
+	      </reference>
+	    </references>
 	</back>
 </rfc>
-
-[MARNEW]: https://www.iab.org/activities/workshops/marnew/
-
-[NOTE WELL] https://www.ietf.org/about/note-well.html
-
-[CHATHAM HOUSE RULE] https://www.chathamhouse.org/about/chatham-house-rule
-
-[3GPP] http://www.3gpp.org/
-
-[TCPINC] https://datatracker.ietf.org/wg/tcpinc/charter/
-
-[STATE BROWSER] State of Transport Security for HTTP - browsers https://www.ietf.org/proceedings/93/slides/slides-93-saag-3.pdf
-[STATE SERVER] State of Transport Security for HTTP - Server https://www.ietf.org/proceedings/93/slides/slides-93-saag-4.pdf
-
-[Pew2014]:
-http://www.pewinternet.org/2014/11/12/public-privacy-perceptions/ "Mary
-Madden, Public Perceptions of Privacy and Security in the Post-Snowden
-Era, Pew Research, November 12, 2014"
-
-[FQ CODEL] https://tools.ietf.org/html/draft-ietf-aqm-fq-codel-03#page-4
-
-[IWF] https://www.iwf.org.uk/
