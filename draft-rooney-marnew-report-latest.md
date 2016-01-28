@@ -21,14 +21,14 @@ pi:
 
 author:
 -
-	ins: N. Rooney
-	name: Natasha Rooney
-	organisarion: GSMA
-	email: nrooney@gsma.com
-	uri: https://gsma.com
+ins: N. Rooney
+name: Natasha Rooney
+organisarion: GSMA
+email: nrooney@gsma.com
+uri: https://gsma.com
 
 informative:
-	NOTE_WELL: https://www.ietf.org/about/note-well.html
+NOTE_WELL: https://www.ietf.org/about/note-well.html
 
 --- abstract
 
@@ -48,10 +48,10 @@ Mobile networks have a set of requirements and properties which places a large e
 
 For the purposes of this workshop, bandwidth optimization encompasses a variety of technical topics related to traffic engineering, prioritisation, optimisation, efficiency enhancements, as well as user-related topics such as specific subscription or billing models. These can include:
 
-	- Caching
-	- Prioritisation of interactive traffic over background traffic
-	- Per-user bandwidth limit
-	- Business-related topics such as content delivery arrangements with specific content providers.
+- Caching
+- Prioritisation of interactive traffic over background traffic
+- Per-user bandwidth limit
+- Business-related topics such as content delivery arrangements with specific content providers.
 
 Many of these functions can continue as they’re performed today, even with more encryption. Others use methods which require them to inspect parts of the communication that are encrypted, and these will have to be done differently in an encrypted Internet.
 
@@ -60,14 +60,14 @@ Finally, while not strictly speaking traffic management, some networks employ po
 ## Topics
 The workshop aimed to answer questions including:
 
-	- Understanding the bandwidth optimization use cases particular to radio networks
-	- Understanding existing approaches and how these do not work with encrypted traffic
-	- Understanding reasons why the Internet has not standardised support for LI and why mobile networks have
-	- Determining how to match traffic types with bandwidth optimization methods
-	- Discussing minimal information to be shared to manage networks but ensure user security and privacy
-	- Developing new bandwidth optimization techniques and protocols within these new constraints
-	- Discussing the appropriate network layer(s) for each management function
-	- Cooperative methods of bandwidth optimization and issues associated with these
+- Understanding the bandwidth optimization use cases particular to radio networks
+- Understanding existing approaches and how these do not work with encrypted traffic
+- Understanding reasons why the Internet has not standardised support for LI and why mobile networks have
+- Determining how to match traffic types with bandwidth optimization methods
+- Discussing minimal information to be shared to manage networks but ensure user security and privacy
+- Developing new bandwidth optimization techniques and protocols within these new constraints
+- Discussing the appropriate network layer(s) for each management function
+- Cooperative methods of bandwidth optimization and issues associated with these
 
 The further aim was to gather architectural and engineering guidance on future work in the bandwidth optimisation area based on the discussions around the proposed approaches. The workshop also explored possible areas for standardization, e.g. new protocols that can aid bandwidth optimization whilst ensuring user security inline with new work in the transport layer.
 
@@ -108,16 +108,16 @@ To ensure all attendees were aligned with contributing to discussions and drivin
 The attendees identified and agreed the following scope:
 
 
-	- In discussion we should assume: No broken crypto, Ciphertext increasingly common, congestion does need to be controlled as do other transport issues and Network management including efficient use of resources, in RAN and elsewhere, has to work
-		- How/why is RAN different for transport; help us understand the complexities of the RAN and how hard it is to manage and why those matter
-	- What are the precise problems caused by more ciphertext
-	- Identify players, incl. Users, and resulting tensions and how ciphertext changes those
-	- Some solutions will be radically changed by ciphertext, it's ok to talk about that
-	- As good as possible Quality of experience for end user is a goal
-	- Our aim for the next two days is to analyse the situation and identify specific achievable tasks that could be tackled in the IETF or GSMA (or elsewhere?) and that improve the Internet given the assumptions above
-	- We should not delve into:
-		- Ways of doing interception (legal or not), see RFC2804 for why
-		- Unpredictable political actions.
+- In discussion we should assume: No broken crypto, Ciphertext increasingly common, congestion does need to be controlled as do other transport issues and Network management including efficient use of resources, in RAN and elsewhere, has to work
+- How/why is RAN different for transport; help us understand the complexities of the RAN and how hard it is to manage and why those matter
+- What are the precise problems caused by more ciphertext
+- Identify players, incl. Users, and resulting tensions and how ciphertext changes those
+- Some solutions will be radically changed by ciphertext, it's ok to talk about that
+- As good as possible Quality of experience for end user is a goal
+- Our aim for the next two days is to analyse the situation and identify specific achievable tasks that could be tackled in the IETF or GSMA (or elsewhere?) and that improve the Internet given the assumptions above
+- We should not delve into:
+- Ways of doing interception (legal or not), see RFC2804 for why
+- Unpredictable political actions.
 
 ### Encryption Statistics and Radio Access Network Differences
 
@@ -153,14 +153,14 @@ Network or Transport Solution Sessions aimed to discuss suggested and new soluti
 
 Middleboxes in the network have a number of uses, some which are more beneficial than they are controversial. Collaboration between these network elements and the endpoints could bring about better content distribution. A number of suggestions were given, these included:
 
-	- Mobile Throughput Guidance: exchanges data between the network elements and the endpoints via TCP Options. It also allows for gaining a better idea of how the transport protocol behaves and improving user experience further, although the work still needs to evolve. 
-	- SPUD: a UDP-based encapsulation protocol to allow explicit cooperation with middleboxes while using new, encrypted transport protocols.
-	- Network Status API: An API for operators to share congestion status or the state of a cell before an application starts sending data could allow applications to change their behaviour. 
-	- Traffic classification: classfying traffic and adding this as metadata for analysis throughout the network. This idea has trust and privacy implications. 
-	- ConEx: a mechanism where senders inform the network about the congestion encountered by previous packets on the same flow, in-band at the IP layer.
-	- Latency versus Bandwith: allowing the content provider to indicate whether a better bandwidth or lower latency is of greater priority and allowing the network to react. Where this bit resides and how to authenticate it would need to be decided. 
-	- No network management tools: disabling all network management tools from the network and allow the protocols to manage congestion alone. 
-	- FlowQueue Codel: a hybrid packet scheduler/AQM algorithm, aiming to reduce bufferbloat and latency. FQ-CoDel mixes packets from multiple flows and reduces the impact of head of line blocking from bursty traffic [FQ CODEL].
+- Mobile Throughput Guidance: exchanges data between the network elements and the endpoints via TCP Options. It also allows for gaining a better idea of how the transport protocol behaves and improving user experience further, although the work still needs to evolve. 
+- SPUD: a UDP-based encapsulation protocol to allow explicit cooperation with middleboxes while using new, encrypted transport protocols.
+- Network Status API: An API for operators to share congestion status or the state of a cell before an application starts sending data could allow applications to change their behaviour. 
+- Traffic classification: classfying traffic and adding this as metadata for analysis throughout the network. This idea has trust and privacy implications. 
+- ConEx: a mechanism where senders inform the network about the congestion encountered by previous packets on the same flow, in-band at the IP layer.
+- Latency versus Bandwith: allowing the content provider to indicate whether a better bandwidth or lower latency is of greater priority and allowing the network to react. Where this bit resides and how to authenticate it would need to be decided. 
+- No network management tools: disabling all network management tools from the network and allow the protocols to manage congestion alone. 
+- FlowQueue Codel: a hybrid packet scheduler/AQM algorithm, aiming to reduce bufferbloat and latency. FQ-CoDel mixes packets from multiple flows and reduces the impact of head of line blocking from bursty traffic [FQ CODEL].
 
 Many of these suggestions could be labeled "Network-to-App", a better approach may be "Network-to-User", to achieve this these ideas would need to be expanded. Others aim to create "hop-to-hop" solutions, which could be more inline with how congestion is managed today, but with greater privacy IMPLICATIONS. 
 
@@ -212,40 +212,40 @@ Some mobile network operators are producing transparency reports covering regula
 
 Based on the talks and discussions throughout the workshop a set of requirements and suggested solutions has been collected. This is not an exhaustve list.
 
-	- Encrypted Traffic: any solution should encourage and support encrypted traffic.
-	- Flexibility: radio access network qualities vary vastly and different network needs in content can be identified, so any new solution should be flexible to either the network type or content type or both.
-	- Privacy: new solutions should not introduce ways where information can be discovered flows and attribute them to users. 
-	- Minimum data only for collaborative work: user data, app data and network data all needs protecting, so new solutions should use the minimum information to make a working solution.
+- Encrypted Traffic: any solution should encourage and support encrypted traffic.
+- Flexibility: radio access network qualities vary vastly and different network needs in content can be identified, so any new solution should be flexible to either the network type or content type or both.
+- Privacy: new solutions should not introduce ways where information can be discovered flows and attribute them to users. 
+- Minimum data only for collaborative work: user data, app data and network data all needs protecting, so new solutions should use the minimum information to make a working solution.
 
 A collection of solutions suggested throughout the workshop is given below. These solutions haven't been matched to the requirements above, so this step will need to come later.
 
-	- Evolving TCP or evolution on the transport layer: this could take a number of forms and some of this work is already existing within IETF. Other suggestions include:
-		- Congestion Control: many attendees cited congestion control as a key issue, further analysis, investigation and work could be done here. 
-		- SPROUT: research at MIT which is a transport protocol for interactive applications that desire high throughput and low delay. [SPROUT]
-		- PCC: Performance-oriented Congestion Control: is a new architecture that aims for consistent high performance even in challenging scenarios. PCC enpoints observe the connection between their actions and their known performance, which allows them to adapt their actions. [PCC]
-	- CDNs and Caches: placing caches closer to the mobile user or making more intelligent CDNs would result in faster content delivery and less train on the network. Related work includes:
-		- Blind Caching: a proposal for caching of encrypted content.
-		- CDN improvements: including keyless SSL and better CDN placement. 
-	- Mobile Throughput Guidance: a mechanism and protocol elements that allow the cellular network to provide near real-time information on capacity available to the TCP server. [MTG]
-	- One bit for latency / bandwidth tradeoff: using one bit to identify whether a stream prefers low latency at the expense of throughput. This rids solutions of the trust issue as applications will need to select the best scenario for their traffic type. 
-	- Base Station: some suggestions involved "using the Base Station", but this was not defined in detail. The Base Station holds the Radio Resource Controller and scheduler which could provide either a place to host solutions or data from the Base Station could help in devising new solutions. 
-	- Identify traffic types via 5-tuple: information from the 5-tuple could provide understanding of the traffic type which network management could then be applied.
-	- Heuristics: Networks can sometimes identify traffic types through specifics such as data flow rate and then apply network management to these identified flows. This is not recommended as categorisations can be incorrect. 
-	- APIs: An API for operators to share congestion status or the state of a cell before an application starts sending data could allow applications to change their behaviour. Alternatively an API could provide the network with some information on the data type to provide network management to, although this method exposes privacy issues.
-	- Standard approach for operator to offer services to Content Providers: mobile network operators could provide caching services or other services for content providers to use for faster and smoother content delivery. 
-	- AQM [AQM] and ECN [ECN] deployments: queueing and congestion management methods have existed for sometime in the form of AQM, ECN and others which can help the transport and internet layer adapt to congestion faster.
-	- Trust Model or Trust Framework: some solutions in this area (e.g. SPUD) have a reliance on trust when content providers or the network are being asked to add classifiers to their traffic.
-	- Keyless SSL: allows content providers to maintain their private keys on a "key server" and host the content elsewhere (e.g. on a CDN). This could become standardised in IETF. [LURK]
-	- Meaningful capacity sharing: including the ConEx [CONEX] work which exposes information about congestion to the network nodes.
-	- Hop-by-hop: some suggestions offer hop-by-hop methods allowing nodes to adapt flow given the qualities of the networks around them and the congestion they're experiencing. 
-	- Metrics and metric standards: in order to evolve current protocols to be best suited to today's networks data is needed on the current network situations, protocol deployments, packet traces and middlebox behaviour. Futher than this proper testing and debugging on networks could provide great insight for stack evolution.
-	- 5G: Mobile operator standards bodies are in the process of setting the requirements for 5G, requirements for network management could be added.
+- Evolving TCP or evolution on the transport layer: this could take a number of forms and some of this work is already existing within IETF. Other suggestions include:
+- Congestion Control: many attendees cited congestion control as a key issue, further analysis, investigation and work could be done here. 
+- SPROUT: research at MIT which is a transport protocol for interactive applications that desire high throughput and low delay. [SPROUT]
+- PCC: Performance-oriented Congestion Control: is a new architecture that aims for consistent high performance even in challenging scenarios. PCC enpoints observe the connection between their actions and their known performance, which allows them to adapt their actions. [PCC]
+- CDNs and Caches: placing caches closer to the mobile user or making more intelligent CDNs would result in faster content delivery and less train on the network. Related work includes:
+- Blind Caching: a proposal for caching of encrypted content.
+- CDN improvements: including keyless SSL and better CDN placement. 
+- Mobile Throughput Guidance: a mechanism and protocol elements that allow the cellular network to provide near real-time information on capacity available to the TCP server. [MTG]
+- One bit for latency / bandwidth tradeoff: using one bit to identify whether a stream prefers low latency at the expense of throughput. This rids solutions of the trust issue as applications will need to select the best scenario for their traffic type. 
+- Base Station: some suggestions involved "using the Base Station", but this was not defined in detail. The Base Station holds the Radio Resource Controller and scheduler which could provide either a place to host solutions or data from the Base Station could help in devising new solutions. 
+- Identify traffic types via 5-tuple: information from the 5-tuple could provide understanding of the traffic type which network management could then be applied.
+- Heuristics: Networks can sometimes identify traffic types through specifics such as data flow rate and then apply network management to these identified flows. This is not recommended as categorisations can be incorrect. 
+- APIs: An API for operators to share congestion status or the state of a cell before an application starts sending data could allow applications to change their behaviour. Alternatively an API could provide the network with some information on the data type to provide network management to, although this method exposes privacy issues.
+- Standard approach for operator to offer services to Content Providers: mobile network operators could provide caching services or other services for content providers to use for faster and smoother content delivery. 
+- AQM [AQM] and ECN [ECN] deployments: queueing and congestion management methods have existed for sometime in the form of AQM, ECN and others which can help the transport and internet layer adapt to congestion faster.
+- Trust Model or Trust Framework: some solutions in this area (e.g. SPUD) have a reliance on trust when content providers or the network are being asked to add classifiers to their traffic.
+- Keyless SSL: allows content providers to maintain their private keys on a "key server" and host the content elsewhere (e.g. on a CDN). This could become standardised in IETF. [LURK]
+- Meaningful capacity sharing: including the ConEx [CONEX] work which exposes information about congestion to the network nodes.
+- Hop-by-hop: some suggestions offer hop-by-hop methods allowing nodes to adapt flow given the qualities of the networks around them and the congestion they're experiencing. 
+- Metrics and metric standards: in order to evolve current protocols to be best suited to today's networks data is needed on the current network situations, protocol deployments, packet traces and middlebox behaviour. Futher than this proper testing and debugging on networks could provide great insight for stack evolution.
+- 5G: Mobile operator standards bodies are in the process of setting the requirements for 5G, requirements for network management could be added.
 
 In the workshop attendees identified other areas where greater understand could help the standards process. These were identified as:
 
-	- Greater understanding of the RAN at IETF
-	- Reviews and comments on 3GPP perspective
-	- How to do congestion controlling in RAN
+- Greater understanding of the RAN at IETF
+- Reviews and comments on 3GPP perspective
+- How to do congestion controlling in RAN
 
 ## Better Collaboration
 
