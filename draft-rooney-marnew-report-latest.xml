@@ -1,6 +1,6 @@
 <rfc docName="draft-ietf-slim-use-cases-latest">
 	<front>
-    	<title abbrev="slim use cases">IAB Workshop on Managing Radio Networks in an Encrypted World (MaRNEW) Report</title>
+    	<title abbrev="marnew">IAB Workshop on Managing Radio Networks in an Encrypted World (MaRNEW) Report</title>
 
     	<author initials="N." surname="Rooney" fullname="Natasha Rooney">
 			<organization>GSMA</organization>
@@ -44,12 +44,14 @@
 				<t>
 					For the purposes of this workshop, bandwidth optimization encompasses a variety of technical topics related to traffic engineering, prioritisation, optimisation, efficiency enhancements, as well as user-related topics such as specific subscription or billing models. These can include:
 				</t>
-				<list style="symbols">
-			          <t>Caching</t>
-			          <t>Prioritisation of interactive traffic over background traffic</t>
-			          <t>Per-user bandwidth limit</t>
-			          <t>Business-related topics such as content delivery arrangements with specific content providers.</t>
-			    </list>
+				<t>
+					<list style="symbols">
+				          <t>Caching</t>
+				          <t>Prioritisation of interactive traffic over background traffic</t>
+				          <t>Per-user bandwidth limit</t>
+				          <t>Business-related topics such as content delivery arrangements with specific content providers.</t>
+				    </list>
+				</t>
 			    <t>
 					Many of these functions can continue as they’re performed today, even with more encryption. Others use methods which require them to inspect parts of the communication that are encrypted, and these will have to be done differently in an encrypted Internet.
 				</t>
@@ -63,16 +65,18 @@
 				<t>
 					The workshop aimed to answer questions including:
 				</t>
-				<list style="symbols">
-					<t>Understanding the bandwidth optimization use cases particular to radio networks</t>
-					<t>Understanding existing approaches and how these do not work with encrypted traffic</t>
-					<t>Understanding reasons why the Internet has not standardised support for LI and why mobile networks have</t>
-					<t>Determining how to match traffic types with bandwidth optimization methods</t>
-					<t>Discussing minimal information to be shared to manage networks but ensure user security and privacy</t>
-					<t>Developing new bandwidth optimization techniques and protocols within these new constraints</t>
-					<t>Discussing the appropriate network layer(s) for each management function</t>
-					<t>Cooperative methods of bandwidth optimization and issues associated with these</t>
-				</list>
+				<t>
+					<list style="symbols">
+						<t>Understanding the bandwidth optimization use cases particular to radio networks</t>
+						<t>Understanding existing approaches and how these do not work with encrypted traffic</t>
+						<t>Understanding reasons why the Internet has not standardised support for LI and why mobile networks have</t>
+						<t>Determining how to match traffic types with bandwidth optimization methods</t>
+						<t>Discussing minimal information to be shared to manage networks but ensure user security and privacy</t>
+						<t>Developing new bandwidth optimization techniques and protocols within these new constraints</t>
+						<t>Discussing the appropriate network layer(s) for each management function</t>
+						<t>Cooperative methods of bandwidth optimization and issues associated with these</t>
+					</list>
+				</t>
 				<t>
 					The further aim was to gather architectural and engineering guidance on future work in the bandwidth optimisation area based on the discussions around the proposed approaches. The workshop also explored possible areas for standardization, e.g. new protocols that can aid bandwidth optimization whilst ensuring user security inline with new work in the transport layer.
 				</t>
@@ -86,6 +90,7 @@
    			</t>
    			<t>
    				Although policy related topics were out of scope for this workshop they were infrequently referred to. Report readers should be reminded that this workshop did not and did not aim to discuss policy or policy recommendations. 
+   			</t>
 		</section>
 
 		<section anchor="ipr" title="Use of Note Well and Charter House Rule">
@@ -367,118 +372,155 @@
 				The next steps for MaRNEW attendees are to begin work on a select list of the above recommended solutions and other suggestions within the IETF and within other organisations. At IETF95 the ACCORD BoF will be held which will bring the workshop discussion to the wider IETF attendance and select key areas to progress on; these are likely to be definitions of the metrics to be collected, more information on the stack evolution ideas and their impact to network management, Mobile Throughput Guidance evolution, evolution of the Blind Caching work and draft definitions of the "1 bit for latency / bandwidth tradeoff" idea. As identified in the "Better Collaboration" section together we need to ensure that both groups continue the positive relationship to move these ideas forward into being real and workable solutions and both groups need to understand that even though collaboration between the operator network and the internet is of great importance the item of most importance is the experience and security for the users using these services. 
 			</t>
 		</section> <!-- outcomes end-->
-
 	</middle>
 	
 	<back>
 		<references title="Informative References">
+
+			<reference anchor="CAP-URI" target="http://www.w3.org/TR/capability-urls/">
+		        <front>
+			          <title>Good Practices for Capability URLs</title>
+			          <author initials="" surname="" fullname=""/>
+			          <date month="" year=""/>
+		        </front>
+		        <seriesInfo name="" value=""/>
+		     </reference>
+
 	      <reference anchor="MARNEW" target="https://www.iab.org/activities/workshops/marnew/">
 	        <front>
-	          <title>MaRNEW Workshop Website</title>
-	          <date month="" year="" />
-	        </front>
+	          	<title>MaRNEW Workshop Website</title>
+	          	<author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
-	      <reference anchor="NOTE WELL" target="https://www.ietf.org/about/note-well.html">
+	      <reference anchor="NOTE_WELL" target="https://www.ietf.org/about/note-well.html">
 	        <front>
 	          <title>IETF Note Well</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
-	      <reference anchor="CHATHAM HOUSE RULE" target="https://www.chathamhouse.org/about/chatham-house-rule">
+	      <reference anchor="CHATHAM_HOUSE_RULE" target="https://www.chathamhouse.org/about/chatham-house-rule">
 	        <front>
 	          <title>Chatham House Rule</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
-	      <reference anchor="3GPP" target="http://www.3gpp.org/">
+	      <reference anchor="the3GPP" target="http://www.3gpp.org/">
 	        <front>
 	          <title>3GPP Website</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	      <reference anchor="TCPINC" target="https://datatracker.ietf.org/wg/tcpinc/charter/">
 	        <front>
 	          <title>TCPInc</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
-	      <reference anchor="STATE BROWSER" target="https://www.ietf.org/proceedings/93/slides/slides-93-saag-3.pdf">
+	      <reference anchor="STATE_BROWSER" target="https://www.ietf.org/proceedings/93/slides/slides-93-saag-3.pdf">
 	        <front>
 	          <title>State of Transport Security for HTTP - browsers</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
-	      <reference anchor="STATE SERVER" target="https://www.ietf.org/proceedings/93/slides/slides-93-saag-4.pdf">
+	      <reference anchor="STATE_SERVER" target="https://www.ietf.org/proceedings/93/slides/slides-93-saag-4.pdf">
 	        <front>
 	          <title>State of Transport Security for HTTP - Server</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	      <reference anchor="Pew2014" target="http://www.pewinternet.org/2014/11/12/public-privacy-perceptions/">
 	        <front>
 	          <title>Mary Madden, Public Perceptions of Privacy and Security in the Post-Snowden Era, Pew Research, November 12, 2014</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
-	      <reference anchor="FQ CODEL" target="https://tools.ietf.org/html/draft-ietf-aqm-fq-codel-03#page-4">
+	      <reference anchor="FQ_CODEL" target="https://tools.ietf.org/html/draft-ietf-aqm-fq-codel-03#page-4">
 	        <front>
 	          <title>FQ Codel</title>
-	          <date month="" year="" />
-	        </front>
-	      </reference>
-	      <reference anchor="IWF" target="https://www.iwf.org.uk/">
-	        <front>
-	          <title></title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	      <reference anchor="IWF" target="https://www.iwf.org.uk/">
 	        <front>
 	          <title>Internet Watch Foundation</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	      <reference anchor="SPROUT" target="http://alfalfa.mit.edu/">
 	        <front>
 	          <title>SPROUT</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	      <reference anchor="PCC" target="http://modong.github.io/pcc-page/">
 	        <front>
 	          <title>PCC</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	      <reference anchor="MTG" target="https://datatracker.ietf.org/doc/draft-flinck-mobile-throughput-guidance/">
 	        <front>
 	          <title>Mobile Throughput Guidance</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	      <reference anchor="LURK" target="https://www.ietf.org/mailman/listinfo/lurk">
 	        <front>
 	          <title>LURK</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	      <reference anchor="AQM" target="https://datatracker.ietf.org/wg/aqm/documents/">
 	        <front>
 	          <title>AQM</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	      <reference anchor="ECN" target="https://tools.ietf.org/html/rfc3168">
 	        <front>
 	          <title>ECN</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	      <reference anchor="CONEX" target="https://datatracker.ietf.org/doc/rfc6789/">
 	        <front>
 	          <title>ConEx</title>
-	          <date month="" year="" />
-	        </front>
+	          <author initials="" surname="" fullname=""/>
+			  	<date month="" year=""/>
+		    </front>
+		    <seriesInfo name="" value=""/>
 	      </reference>
 	    </references>
 	</back>
