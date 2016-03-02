@@ -1,7 +1,7 @@
 ---
 title: IAB Workshop on Managing Radio Networks in an Encrypted World (MaRNEW) Report</title>
 abbrev: marnew
-docname: draft-nrooney-marnew-report
+docname: draft-nrooney-marnew-report-latest
 date: 2016
 category: 
 
@@ -20,15 +20,15 @@ pi:
 
 
 author:
--
-ins: N. Rooney
-name: Natasha Rooney
-organisarion: GSMA
-email: nrooney@gsma.com
-uri: https://gsma.com
+  -
+    ins: N. Rooney
+    name: Natasha Rooney
+    organisarion: GSMA
+    email: nrooney@gsma.com
+    uri: https://gsma.com
 
 informative:
-NOTE_WELL: https://www.ietf.org/about/note-well.html
+  NOTE_WELL: https://www.ietf.org/about/note-well.html
 
 --- abstract
 

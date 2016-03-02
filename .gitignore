@@ -8,4 +8,5 @@
 .refcache
 venv/
 issues.json
-draft-rooney-marnew-report-latest.xml
+lib
+draft-rooney-marnew-report.xml
