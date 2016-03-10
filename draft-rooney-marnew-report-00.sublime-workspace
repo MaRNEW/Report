@@ -1,0 +1,586 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"an",
+				"anchor"
+			],
+			[
+				"of",
+				"end_of_track"
+			],
+			[
+				"pla",
+				"Playlist"
+			],
+			[
+				"playli",
+				"playlist"
+			],
+			[
+				"end",
+				"end_of_track"
+			],
+			[
+				"player",
+				"playerstate"
+			],
+			[
+				"playlist",
+				"playlisttracklink"
+			],
+			[
+				"play",
+				"playlisttracklink"
+			],
+			[
+				"trac",
+				"tracks"
+			],
+			[
+				"pay",
+				"playlist"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"ass",
+				"assignPapers"
+			],
+			[
+				"re",
+				"remainingPCList"
+			],
+			[
+				"pers",
+				"person1"
+			],
+			[
+				"t",
+				"team"
+			],
+			[
+				"rem",
+				"remove"
+			],
+			[
+				"rea",
+				"remainingPCList"
+			],
+			[
+				"c",
+				"choose"
+			],
+			[
+				"remai",
+				"remainingPCList"
+			],
+			[
+				"tel",
+				"telcoPCList"
+			],
+			[
+				"team",
+				"teams"
+			],
+			[
+				"telc",
+				"telcoPerson"
+			],
+			[
+				"telco",
+				"telcoPerson"
+			],
+			[
+				"ietf",
+				"ietfPCList"
+			],
+			[
+				"fill",
+				"fillTeamWithOneOfEach"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"C",
+				"Concerns"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"f",
+				"f	Anonymous Function"
+			],
+			[
+				"oc",
+				"onclick	Attr"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"DIS",
+				"discoveryResult"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"max",
+				"max_age"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/nrooney/dev/sdk-test-app-html5-v1/source/js/app.js",
+		"/Users/nrooney/dev/sdk-test-app-html5-v1/source/css/style.css",
+		"/Users/nrooney/dev/sdk-test-app-html5-v1/source/demo.html",
+		"/Users/nrooney/dev/sdk-test-app-html5-v1/README.md",
+		"/Users/nrooney/dev/html5-client-sdk-v1/README.md",
+		"/Users/nrooney/dev/sdk-test-app-html5-v1/httpserver.py",
+		"/Users/nrooney/dev/sdk-test-app-html5-v1/source/style.css",
+		"/Users/nrooney/dev/sdk-test-app-html5-v1/js/app.js",
+		"/Users/nrooney/dev/sdk-test-app-html5-v1/video1.html",
+		"/Users/nrooney/dev/marnew/Report/draft-rooney-marnew-report-latest.md",
+		"/Users/nrooney/dev/marnew/Report/draft-rooney-marnew-report-latest.xml",
+		"/Users/nrooney/Desktop/marnew report before the chop!",
+		"/Users/nrooney/Pictures/Apartment Move/whitetablelamp_desc.txt",
+		"/Users/nrooney/Pictures/Apartment Move/roomdivider_desc.txt",
+		"/Users/nrooney/Pictures/Apartment Move/sofa.txt",
+		"/Users/nrooney/dev/marnew/Report/report_text.md",
+		"/Users/nrooney/dev/thisnatasha/js/app.js",
+		"/Users/nrooney/dev/slim/slim-use-cases/draft-ietf-slim-use-cases-latest.xml",
+		"/Users/nrooney/dev/slim/slim-use-cases/untitled",
+		"/Users/nrooney/Downloads/minutes.txt",
+		"/Users/nrooney/Downloads/agenda.txt",
+		"/Users/nrooney/dev/mobileconnectdevrel/app_basic/bower.json",
+		"/Users/nrooney/dev/mobileconnectdevrel/app_basic/app/index.html",
+		"/Users/nrooney/dev/thisnatasha/index.html",
+		"/Users/nrooney/dev/thisnatasha/sw.js",
+		"/Users/nrooney/dev/slim/slim-use-cases/draft-ietf-slim-use-cases-latest.md",
+		"/Users/nrooney/Documents/MaRNEW/overchanges.html",
+		"/Users/nrooney/dev/mobileconnectdevrel/app_basic/app/assets/sass/style.scss",
+		"/Users/nrooney/dev/mobileconnectdevrel/app_basic/package.json",
+		"/Users/nrooney/dev/mobileconnectdevrel/app_basic/Gruntfile.js",
+		"/etc/hosts",
+		"/Users/nrooney/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/nrooney/dev/mobileconnectdevrel/app_basic/.bowerrc",
+		"/Users/nrooney/dev/mobileconnectdevrel/basicapp/Gruntfile.js",
+		"/Users/nrooney/dev/mobileconnectdevrel/basicapp/bower.json",
+		"/Users/nrooney/dev/mobileconnectdevrel/basicapp/app/assets/sass/style.scss",
+		"/Users/nrooney/dev/mobileconnectdevrel/basicapp/package.json",
+		"/Users/nrooney/dev/mobileconnectdevrel/basicapp/.bowerrc",
+		"/Users/nrooney/dev/mobileconnectdevrel/basicapp/assets/sass/style.scss",
+		"/Users/nrooney/dev/mobileconnectdevrel/basicapp/basicapp/index.html",
+		"/Users/nrooney/dev/mobileconnectdevrel/basicapp/index.html",
+		"/Users/nrooney/dev/mobileconnectdevrel/basicapp/index.hmtl",
+		"/Users/nrooney/dev/python_scripts/spotify/spotify_session.py",
+		"/Users/nrooney/dev/python_scripts/spotify/exampleplay.py",
+		"/Users/nrooney/dev/python_scripts/spotify/playonwake.py",
+		"/Users/nrooney/Documents/MaRNEW/agenda.html",
+		"/Users/nrooney/dev/python_scripts/maRNEW.py",
+		"/Users/nrooney/dev/thisnatasha/speaker.html",
+		"/Users/nrooney/dev/thisnatasha/js/serviceworker-cache-polyfill.js",
+		"/Users/nrooney/dev/python_scripts/maRNEW.txt",
+		"/Users/nrooney/Downloads/marnew.html",
+		"/Users/nrooney/dev/web-api-gap/document/index.html",
+		"/Users/nrooney/dev/thisnatasha/css/styles.css",
+		"/Users/nrooney/dev/serviceworker.org/_layouts/default.html",
+		"/Users/nrooney/dev/serviceworker.org/_includes/title.html",
+		"/Users/nrooney/dev/serviceworker.org/articles.html",
+		"/Users/nrooney/dev/serviceworker.org/_includes/list.html",
+		"/Users/nrooney/dev/serviceworker.org/index.md",
+		"/Users/nrooney/dev/serviceworker.org/_includes/nav.html",
+		"/Users/nrooney/dev/serviceworker.org/css/app.css",
+		"/Users/nrooney/dev/serviceworker.org/_site/css/bootstrap-theme.min.css",
+		"/Users/nrooney/dev/serviceworker.org/_site/css/bootstrap.min.css",
+		"/Users/nrooney/dev/serviceworker.org/js/bootstrap.min.js",
+		"/Users/nrooney/dev/serviceworker.org/css/bootstrap.min.css",
+		"/Users/nrooney/dev/serviceworker.org/css/bootstrap-theme.min.css",
+		"/Users/nrooney/dev/serviceworker.org/_posts/2015-05-01-the-ux-of-offline-first",
+		"/Users/nrooney/dev/serviceworker.org/_includes/featurettes.html",
+		"/Users/nrooney/dev/serviceworker.org/_data/people.yml",
+		"/Users/nrooney/dev/serviceworker.org/README.md",
+		"/Users/nrooney/dev/serviceworker.org/_posts/2015-03-06-service-workers-on-vacay.md",
+		"/Users/nrooney/dev/serviceworker.org/_posts/2015-03-06-service-workers-on-vacay",
+		"/Users/nrooney/dev/serviceworker.org/_posts/2014-05-07-network-connectivity-optional.md",
+		"/Users/nrooney/dev/serviceworker.org/CONTRIBUTING.md",
+		"/Users/nrooney/dev/serviceworker.org/_data/README.MD",
+		"/Users/nrooney/dev/serviceworker.org/_posts/2014-12-15-capability-reporting-with-service-worker.md",
+		"/Users/nrooney/Documents/mystuff/ssl.key",
+		"/Users/nrooney/Documents/mystuff/decrypt.ssl.key",
+		"/Users/nrooney/Documents/mystuff/test.thisnatasha.ssl.key",
+		"/Users/nrooney/dev/serviceworker.org/_posts/2014-12-01-introduction-to-service-worker.md",
+		"/Users/nrooney/dev/serviceworker.org/_includes/cta.html",
+		"/Users/nrooney/dev/serviceworker.org/_site/articles.html",
+		"/Users/nrooney/dev/web-api-gap/api_by_features/accelerometer.json",
+		"/Users/nrooney/dev/web-api-gap/api_by_features/device_interaction/accelerometer.md",
+		"/Users/nrooney/dev/web-api-gap/api_by_features/device_interaction/iOS_UIAccelerometer",
+		"/Users/nrooney/dev/swjquk/app/js/app.js",
+		"/Users/nrooney/dev/swjquk/app/data.json",
+		"/Users/nrooney/dev/swjquk/app/index.html",
+		"/Users/nrooney/dev/swjquk/app/css/dist/bootstrap.min.css",
+		"/Users/nrooney/dev/swjquk/app/js/dist/serviceworker-cache-polyfill.js",
+		"/Users/nrooney/dev/swjquk/app/js/sw.js",
+		"/Users/nrooney/dev/swjquk/app/testtranslate.html",
+		"/Users/nrooney/dev/swjquk/app/css/app.css",
+		"/Users/nrooney/dev/swjquk/app/js/bundle.js",
+		"/Users/nrooney/dev/swjquk/app/testdict.html",
+		"/Users/nrooney/dev/html5project/app/authorization.html",
+		"/Users/nrooney/dev/html5project/app/discovered.html",
+		"/Users/nrooney/dev/html5project/app/assets/javascripts/OpenIdConnectSDK.js",
+		"/Users/nrooney/dev/html5project/app/assets/javascripts/LogoSDK.js",
+		"/Users/nrooney/dev/html5project/app/assets/javascripts/DiscoverySDK.js",
+		"/Users/nrooney/dev/html5project/app/assets/javascripts/Base64Utils.js",
+		"/Users/nrooney/dev/html5project/demo.html",
+		"/Users/nrooney/dev/html5project/app/index.html",
+		"/Users/nrooney/dev/html5project/app/video1.html",
+		"/Users/nrooney/dev/html5project/app/authorised.html",
+		"/Users/nrooney/dev/html5project/DiscoverySDK.js",
+		"/Users/nrooney/dev/html5project/demo/demo.html",
+		"/Users/nrooney/dev/html5project/discovered.html",
+		"/Users/nrooney/dev/html5project/xosdk/test/demo.html",
+		"/Users/nrooney/dev/html5project/Gruntfile.js",
+		"/Users/nrooney/dev/html5project/xosdk/test/corstest.html",
+		"/Users/nrooney/dev/html5project/bower.json",
+		"/Users/nrooney/dev/html5project/.bowerrc",
+		"/Users/nrooney/dev/html5project/app/assets/css/style.css"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<current file>",
+			"",
+			"this file"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"latest",
+			"authorization(",
+			"runauth",
+			"userinfoCallbackFunction",
+			"redirect_uri",
+			"runAuthorization",
+			"received:",
+			"startlogin",
+			"getCacheDiscoveryItem",
+			"runa",
+			"startLo",
+			"processDiscoveryResult",
+			"activeDiscoveryComplete",
+			"getDiscoveryActive",
+			"startActiveDiscovery",
+			"authorizationCallbackFunction",
+			"runAuthorization",
+			"processDiscoveryResult",
+			"activeDiscoveryComplete",
+			"clearDiscoveryCache",
+			"split",
+			"stringi",
+			"storage",
+			"storecon",
+			"if \\(console.log\\) ",
+			"if (console.log) ",
+			"startuplog",
+			"ndiscoveryServiceUri",
+			"getCacheDiscoveryItem",
+			"        <div class=\"input-group\">\n          <span class=\"input-group-addon\" id=\"basic-addon1\">@</span>\n          <input type=\"text\" class=\"form-control\" placeholder=\"Username\" aria-describedby=\"basic-addon1\">\n        </div>",
+			".val",
+			".val(",
+			"nFUNCTION",
+			"FUNCTION",
+			"discoveryClientSecretDefault",
+			"nav",
+			"mc.mob",
+			"	",
+			"<section anchor=\"([(a-z)(A-Z)(\\-)]+)\" title=\"([(a-z)(A-Z)(\\-)]+)\">",
+			"<section anchor=\"([a-zA-Z\\-]+)\" title=\"([a-zA-Z ]+)\">",
+			"<section anchor=\"([a-zA-z\\-]+)\" title=\"([a-zA-z ]+)\">",
+			"<section anchor=\"([a-z\\-]+)\" title=\"([a-z ]+)\">",
+			"<section anchor=\"([a-z\\-]+)\" title=\"([a-z]+)\">",
+			"<section anchor=\"([a-zA-Z0-9 ]+)\" title=\"([^a-zA-Z0-9 ]+)\">",
+			"<section anchor=\"([a-zA-Z0-9 \\-]+)\" title=\"([^a-zA-Z0-9 ]+)\">",
+			"<section anchor=\"([^a-zA-Z0-9 \\-]+)\" title=\"([^a-zA-Z0-9 ]+)\">",
+			"<section anchor=\"([^a-zA-Z0-9 ]+)\" title=\"([^a-zA-Z0-9 ]+)\">",
+			"<section anchor=\"([a-z]+)\" title=\"([a-z]+)\">",
+			"	<section anchor=\"(([a-z]+-)+)\" title=\"(([a-z]+/ )+)\">",
+			"	<section anchor=\"(([a-z]+-)+)\" title=\"(([a-z]+ )+)\">",
+			"	<section anchor=\"([a-z-]+)\" title=\"([a-z- ]+)\">",
+			"		",
+			"</t>",
+			"<t>",
+			"<section anchor=\"([a-z]+)\" title=\"([a-z]+)\">",
+			"title=\"\\(\\[a-z\\]+\\)",
+			"title=\"\\([a-z]+\\)",
+			"title=\"/([a-z]+/)",
+			"<section anchor=\"/([a-z]+/)\" title=\"/([a-z]+/)\">",
+			"title=\"([a-z]+)\">",
+			"<section anchor=\"([a-z]+)\" title=\"([a-z]+)\">",
+			"<section anchor=\"(\\w+)\" title=\"(\\w+)\">",
+			"<section anchor=\"?\" title=\"(\\w+)\">",
+			"</keyword>",
+			"<keyword>",
+			"<list",
+			"list",
+			"[pew",
+			"references",
+			"	",
+			" (",
+			"\n",
+			"	•	",
+			"Q:",
+			"	*",
+			"should",
+			"— ",
+			"          —",
+			"     —",
+			"	▪	",
+			"	◦	",
+			"	•	",
+			"•	",
+			"natas",
+			"open",
+			"on_end",
+			"now_playing",
+			".play(",
+			"_event",
+			"event",
+			"end_of_track",
+			"event",
+			"thread",
+			"stop",
+			"end_of_track",
+			"end",
+			"logge",
+			"loop",
+			"alsa",
+			"console",
+			"'',\n",
+			"urlsToCache",
+			"</a>",
+			"<a href=\">",
+			"co PC list: \")\nprint (len(telcoPCLi",
+			"twitte",
+			"#thisNatasha ",
+			"400",
+			"translationController",
+			"data-ng",
+			"ng-",
+			"data-",
+			"beer",
+			"event.",
+			"self",
+			"works",
+			"theme",
+			"\"",
+			"\"japanese\"",
+			"\"english\"",
+			"OPERATORNAME",
+			"serving",
+			"getrespon",
+			"$",
+			"runAuthorization",
+			"subscriber",
+			"sb",
+			"operator"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			".html",
+			".html(",
+			"n*********************************\\nFUN",
+			"*********************************\\nFUNCTION",
+			"",
+			"# $2",
+			"",
+			"# $2",
+			"# $1",
+			"# $2",
+			"# (\\2)",
+			"# (\\w+)",
+			"",
+			"keyword:",
+			" ",
+			"\n\n (",
+			"\n\n (\n (",
+			"\n(",
+			"",
+			"* ",
+			"*",
+			"    *",
+			"*",
+			"    *    ",
+			"*    ",
+			"",
+			"data-ng-",
+			"data-ng",
+			"",
+			"'",
+			"japanese",
+			"english",
+			""
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 104.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 27.0
+	},
+	"pinned_build_system": "",
+	"project": "draft-rooney-marnew-report-00.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 262.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

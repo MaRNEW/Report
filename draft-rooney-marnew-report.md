@@ -1,7 +1,7 @@
 ---
-title: IAB Workshop on Managing Radio Networks in an Encrypted World (MaRNEW) Report</title>
+title: IAB Workshop on Managing Radio Networks in an Encrypted World (MaRNEW) Report
 abbrev: marnew
-docname: draft-nrooney-marnew-report-latest
+docname: draft-nrooney-marnew-report-00
 date: 2016
 category: 
 
