@@ -23,7 +23,7 @@ author:
   -
     ins: N. Rooney
     name: Natasha Rooney
-    organisarion: GSMA
+    organization: GSMA
     email: nrooney@gsma.com
     uri: https://gsma.com
 
@@ -33,35 +33,54 @@ informative:
   RFC7476:
   RFC3168:
 
-  NOTE_WELL: https://www.ietf.org/about/note-well.html
+  NOTE_WELL:
+    target: https://www.ietf.org/about/note-well.html
+    title: IETF Note Well
 
   MARNEW:
     target: https://www.iab.org/activities/workshops/marnew/ 
+    title: MaRNEW Workshop IAB Homepage
 
   CHATHAM_HOUSE_RULE:
     target: https://www.chathamhouse.org/about/chatham-house-rule
+    title: Chatham House Rule
 
   GSMA:
     target: http://gsma.com
+    title: GSMA Homepage
 
   3GPP:
     target: http://www.3gpp.org/
+    title: 3GPP Homepage
 
   PCC-QOS:
     target: http://www.3gpp.org/DynaReport/29213.htm
+    title: Policy and charging control signalling flows and Quality of Service (QoS) parameter mapping
+    date: March, 2016
 
   STATE_BROWSER:
     target: https://www.ietf.org/proceedings/93/slides/slides-93-saag-3.pdf
+    title: Some observations of TLS in the web
+    author:
+      name: Richard Barnes
+      ins: R. Barnes
+    date: July, 2015
+
 
   STATE_SERVER:
     target: https://www.ietf.org/proceedings/93/slides/slides-93-saag-4.pdf
+    title: Some observations of TLS in the web
+    author:
+      name: Rich Salz
+      ins: R. Salz
+    date: July, 2015
 
   TCPINC:
     target: https://datatracker.ietf.org/wg/tcpinc/charter/
 
   UBIQUITOUS:
     target: https://tools.ietf.org/html/draft-mm-wg-effect-encrypt-01
-    title: 
+    title: Effect of Ubiquitous Encryption
     author: 
       name: Kathleen Moriarty, Al Morton
       ins: K. Moriarty, A. Morton
@@ -106,7 +125,7 @@ informative:
 
   QUIC:
     target: https://tools.ietf.org/html/draft-tsvwg-quic-protocol-00
-    title: QUIC: A UDP-Based Secure and Reliable Transport for HTTP/2
+    title: QUIC, A UDP-Based Secure and Reliable Transport for HTTP/2
     author:
       name: Jana Iyengar, Ian Swett 
       ins: J. Iyengar, I. Swett
@@ -129,7 +148,7 @@ informative:
 
   PCC:
     target: http://arxiv.org/pdf/1409.7092v3.pdf
-    title: PCC: Re-architecting Congestion Control for Consistent High Performance
+    title: PCC, Re-architecting Congestion Control for Consistent High Performance
     author:
       name: Mo Dong, Qingxi Li, Doron Zarchy, P. Brighten Godfrey, and Michael Schapira 
       ins: M. Dong, Q. Li, D. Zarchy, P. Brighten Godfrey, and M. Schapira 
@@ -150,23 +169,6 @@ informative:
       name: Daniel Migault, Kevin Ma
       ins: D. Migault, K. Ma
     date: January 19, 2016
-
-  NEG:
-    target: 
-    title: 
-    author:
-      name: 
-      ins: 
-    date: 
-
-  NEG:
-    target: 
-    title: 
-    author:
-      name: 
-      ins: 
-    date: 
-
 
 --- abstract
 
