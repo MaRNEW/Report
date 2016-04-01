@@ -49,7 +49,7 @@ informative:
     target: http://gsma.com
     title: GSMA Homepage
 
-  3GPP:
+  SDO_3GPP:
     target: http://www.3gpp.org/
     title: 3GPP Homepage
 
@@ -229,9 +229,9 @@ The workshop was conducted under the IETF [NOTE_WELL] with the exception of the 
 
 The IETF and GSMA [GSMA] have divergent working pratices, standards and processes. IETF is an open organisation with community driven standards with the key aim of functionality and security for the internet's users, the GSMA is membership based and serves the needs of its membership base most of whom are mobile network operators. 
 
-Unlike IETF, GSMA makes few standards. Within the telecommunications industry standards are set in various divergent groups depending on their purpose. Perhpas of most relevance to the bandwidth optimisation topic here is the work of the [3GPP] which work on radio network and core network standards with their members which include mobile operators and original equipment manufacturers.
+Unlike IETF, GSMA makes few standards. Within the telecommunications industry standards are set in various divergent groups depending on their purpose. Perhpas of most relevance to the bandwidth optimisation topic here is the work of the [SDO_3GPP] which work on radio network and core network standards with their members which include mobile operators and original equipment manufacturers.
 
-One of the [3GPP] standards relevant to this workship is PCC-QoS [PCC-QOS]. Traditionally mobile networks have managed different applications and services based on the resources available and priorities given; for instance, emergency services have a top priority, data has a lower prioirty and voice services are somewhere inbetween. [3GPP] defined the PCC-QoS mechanism to support this functionality, some of which cannot occur for encrypted communications.
+One of the [SDO_3GPP] standards relevant to this workship is PCC-QoS [PCC-QOS]. Traditionally mobile networks have managed different applications and services based on the resources available and priorities given; for instance, emergency services have a top priority, data has a lower prioirty and voice services are somewhere inbetween. [SDO_3GPP] defined the PCC-QoS mechanism to support this functionality, some of which cannot occur for encrypted communications.
 
 # Scene Setting Sessions
 
