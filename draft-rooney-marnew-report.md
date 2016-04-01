@@ -77,6 +77,7 @@ informative:
 
   TCPINC:
     target: https://datatracker.ietf.org/wg/tcpinc/charter/
+    title: TCP Increased Security Working Group
 
   UBIQUITOUS:
     target: https://tools.ietf.org/html/draft-mm-wg-effect-encrypt-01
@@ -137,6 +138,7 @@ informative:
 
   IWF:
     target: https://www.iwf.org.uk/
+    title: Internet Watch Foundation
 
   SPROUT:
     target: https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final113.pdf
