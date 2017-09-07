@@ -4,24 +4,24 @@
 
 Network Working Group                                          N. Rooney
 Internet-Draft                                                      GSMA
-Expires: October 3, 2016                                   April 1, 2016
+Expires: March 11, 2018                                September 7, 2017
 
 
  IAB Workshop on Managing Radio Networks in an Encrypted World (MaRNEW)
                                  Report
-                     draft-nrooney-marnew-report-00
+                       draft-iab-marnew-report-00
 
 Abstract
 
-   The MarNEW workshop aimed to discuss solutions for badnwidth
+   The MarNEW workshop aimed to discuss solutions for bandwidth
    optimisation on mobile networks for encrypted content, as current
    solutions rely on unencrypted content which is not indicative of the
-   security needs of today's internet users.  The workshop gathered IETF
+   security needs of today's Internet users.  The workshop gathered IETF
    attendees, IAB members and various organisations involved in the
    telecommunications industry including original equipment
    manufacturers and mobile network operators.
 
-   The group discussed the current internet encryption trends and
+   The group discussed the current Internet encryption trends and
    deployment issues identified within the IETF, and the privacy needs
    of users which should be adhered.  Solutions designed around sharing
    data from the network to the endpoints and vice versa were then
@@ -53,16 +53,16 @@ Status of This Memo
 
 
 
-Rooney                   Expires October 3, 2016                [Page 1]
+Rooney                   Expires March 11, 2018                 [Page 1]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
-   This Internet-Draft will expire on October 3, 2016.
+   This Internet-Draft will expire on March 11, 2018.
 
 Copyright Notice
 
-   Copyright (c) 2016 IETF Trust and the persons identified as the
+   Copyright (c) 2017 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -79,7 +79,7 @@ Copyright Notice
 
    Mobile networks have a set of requirements and properties which
    places a large emphasis on sophisticated bandwidth optimization.
-   Encryption is increasing on the internet which is positive for
+   Encryption is increasing on the Internet which is positive for
    consumer and business privacy and security.  Many existing mobile
    bandwidth optimization solutions primarily operate on non-encrypted
    communications; this can lead to performance issues being amplified
@@ -109,9 +109,9 @@ Copyright Notice
 
 
 
-Rooney                   Expires October 3, 2016                [Page 2]
+Rooney                   Expires March 11, 2018                 [Page 2]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
    Many of these functions can continue as they're performed today, even
@@ -165,9 +165,9 @@ Internet-Draft                   marnew                       April 2016
 
 
 
-Rooney                   Expires October 3, 2016                [Page 3]
+Rooney                   Expires March 11, 2018                 [Page 3]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
 1.3.  Organization of this report
@@ -175,7 +175,7 @@ Internet-Draft                   marnew                       April 2016
    This workshop report summarizes the contributions to and discussions
    at the workshop, organized by topic.  The workshop began with scene
    setting topics which covered the issues around deploying encryption,
-   the increased need for privacy on the internet and setting a clear
+   the increased need for privacy on the Internet and setting a clear
    understanding that ciphertext should remain unbroken.  Later sessions
    focused on key solution areas; these included evolution on the
    transport layer and sending data up or down the path.  A session on
@@ -208,47 +208,47 @@ Internet-Draft                   marnew                       April 2016
 
 1.5.  IETF and GSMA
 
-   The IETF and GSMA [GSMA] have divergent working pratices, standards
+   The IETF and GSMA [GSMA] have divergent working practices, standards
    and processes.  IETF is an open organisation with community driven
    standards with the key aim of functionality and security for the
-   internet's users, the GSMA is membership based and serves the needs
+   Internet's users, the GSMA is membership based and serves the needs
    of its membership base most of whom are mobile network operators.
 
    Unlike IETF, GSMA makes few standards.  Within the telecommunications
    industry standards are set in various divergent groups depending on
-   their purpose.  Perhpas of most relevance to the bandwidth
+   their purpose.  Perhaps of most relevance to the bandwidth
    optimisation topic here is the work of the [SDO_3GPP] which work on
 
 
 
-Rooney                   Expires October 3, 2016                [Page 4]
+Rooney                   Expires March 11, 2018                 [Page 4]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
    radio network and core network standards with their members which
    include mobile operators and original equipment manufacturers.
 
-   One of the [SDO_3GPP] standards relevant to this workship is PCC-QoS
+   One of the [SDO_3GPP] standards relevant to this workshop is PCC-QoS
    [PCC-QOS].  Traditionally mobile networks have managed different
    applications and services based on the resources available and
    priorities given; for instance, emergency services have a top
-   priority, data has a lower prioirty and voice services are somewhere
-   inbetween.  [SDO_3GPP] defined the PCC-QoS mechanism to support this
+   priority, data has a lower priority and voice services are somewhere
+   in-between.  [SDO_3GPP] defined the PCC-QoS mechanism to support this
    functionality, some of which cannot occur for encrypted
    communications.
 
 2.  Scene Setting Sessions
 
    Scene setting sessions aimed to bring all attendees up to a basic
-   understanding of the problem and the scope of the workhop.  There
+   understanding of the problem and the scope of the workshop.  There
    were three scene setting sessions: Scene Setting (defining scope),
    Encryption Deployment Considerations and Trust Models and User Choice
    (Privacy).
 
 2.1.  Scene Setting
 
-   The telecommunications industry and internet standards are extremely
+   The telecommunications industry and Internet standards are extremely
    different in terms of ethos and business practices.  Both industries
    drive technical standards in their domain and build technical
    solutions with some policy-driven use cases.  These technologies, use
@@ -277,9 +277,9 @@ Internet-Draft                   marnew                       April 2016
 
 
 
-Rooney                   Expires October 3, 2016                [Page 5]
+Rooney                   Expires March 11, 2018                 [Page 5]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
    o  How/why is RAN different for transport; help us understand the
@@ -333,20 +333,20 @@ Internet-Draft                   marnew                       April 2016
 
 
 
-Rooney                   Expires October 3, 2016                [Page 6]
+Rooney                   Expires March 11, 2018                 [Page 6]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
 2.2.  Encryption Deployment Considerations
 
-   Encryption across the internet is on the rise.  However, some
+   Encryption across the Internet is on the rise.  However, some
    organisations and individuals come across a common set of operational
    issues when deploying encryption, mainly driven by commercial
    perspectives.  The [UBIQUITOUS] draft explains these network
    management function impacts, detailing areas around incident
    monitoring, access control management, and regulation on mobile
-   networks.  The data was collected from various internet players,
+   networks.  The data was collected from various Internet players,
    including system and network administrators across enterprise,
    governmental organisations and personal use.  The aim of the document
    is to gain an understanding of what is needed for technical solutions
@@ -354,13 +354,12 @@ Internet-Draft                   marnew                       April 2016
    Attendees commented that worthwhile additions would be: different
    business environments (e.g. cloud environments) and service chaining.
    Incident monitoring in particular was noted as a difficult issue to
-   solve given the use of URL in today's inicident monitoring
-   middleware.
+   solve given the use of URL in today's incident monitoring middleware.
 
    Some of these impacts to mobile networks can be resolved using
    difference methods and the [NETWORK_MANAGEMENT] draft details these
    methods.  The draft focuses heavily on methods to manage network
-   traffic whithout breaching user privacy and security.
+   traffic without breaching user privacy and security.
 
    By reviewing encryption depoyment issues and the alternative methods
    of network management MaRNEW attendees were made aware of the issues
@@ -376,26 +375,24 @@ Internet-Draft                   marnew                       April 2016
    important when designing these solutions.
 
    From a recent study [Pew2014] 64% of users said concerns over privacy
-   have increased, 67% of mobile internet users would like to do more to
+   have increased, 67% of mobile Internet users would like to do more to
    protect their privacy.  The W3C and IETF have both responded to user
    desires for better privacy by recommending encryption for new
    protocols and web technologies.  Within the W3C new security
    standards are emerging and the design principles for HTML hold that
    users are the stakeholders with most priority, followed by
-   implementors and other stakeholders, further inforcing the "user
+   implementors and other stakeholders, further enforcing the "user
    first" principle.  Users also have certain security expectations from
    particular contexts, and sometimes use new technologies to further
-
-
-
-
-Rooney                   Expires October 3, 2016                [Page 7]
-
-Internet-Draft                   marnew                       April 2016
-
-
    protect their privacy even if those technologies weren't initially
    developed for that purpose.
+
+
+
+Rooney                   Expires March 11, 2018                 [Page 7]
+
+Internet-Draft                   marnew                   September 2017
+
 
    Technologies which can impact user privacy sometimes do this ignorant
    of the privacy implications or incorrectly assume that the benefits
@@ -430,28 +427,28 @@ Internet-Draft                   marnew                       April 2016
    Network or Transport Solution Sessions aimed to discuss suggested and
    new solutions for managing encrypted traffic on radio access
    networks.  Most solutions focus on the sharing of metadata; either
-   from the enpoint to the network, from the network to the endpoint, or
-   cooperative sharing between both.  Evolutions on the transport layer
-   could be another approach to solve some of the issues radio access
-   networks experience which cause them to require network management
-   middleboxes.  By removing problems on the transport layer the need to
-   expesnive middleboxes could decrease.
+   from the endpoint to the network, from the network to the endpoint,
+   or cooperative sharing between both.  Evolutions on the transport
+   layer could be another approach to solve some of the issues radio
+   access networks experience which cause them to require network
+   management middleboxes.  By removing problems on the transport layer
+   the need to expensive middleboxes could decrease.
 
 3.1.  Sending Data Up / Down for Network Management Benefits
 
    Middleboxes in the network have a number of uses, some which are more
    beneficial than they are controversial.  Collaboration between these
-
-
-
-
-Rooney                   Expires October 3, 2016                [Page 8]
-
-Internet-Draft                   marnew                       April 2016
-
-
    network elements and the endpoints could bring about better content
    distribution.  A number of suggestions were given, these included:
+
+
+
+
+
+Rooney                   Expires March 11, 2018                 [Page 8]
+
+Internet-Draft                   marnew                   September 2017
+
 
    o  Mobile Throughput Guidance [MTG]: exchanges data between the
       network elements and the endpoints via TCP Options.  It also
@@ -467,7 +464,7 @@ Internet-Draft                   marnew                       April 2016
       status or the state of a cell before an application starts sending
       data could allow applications to change their behaviour.
 
-   o  Traffic classification: classfying traffic and adding this as
+   o  Traffic classification: classifying traffic and adding this as
       metadata for analysis throughout the network.  This idea has trust
       and privacy implications.
 
@@ -475,10 +472,10 @@ Internet-Draft                   marnew                       April 2016
       the congestion encountered by previous packets on the same flow,
       in-band at the IP layer.
 
-   o  Latency versus Bandwith: allowing the content provider to indicate
-      whether a better bandwidth or lower latency is of greater priority
-      and allowing the network to react.  Where this bit resides and how
-      to authenticate it would need to be decided.
+   o  Latency versus Bandwidth: allowing the content provider to
+      indicate whether a better bandwidth or lower latency is of greater
+      priority and allowing the network to react.  Where this bit
+      resides and how to authenticate it would need to be decided.
 
    o  No network management tools: disabling all network management
       tools from the network and allow the protocols to manage
@@ -498,16 +495,16 @@ Internet-Draft                   marnew                       April 2016
    "App-to-Network" style solutions have either existed for a long time
    by implicit solutions, or explicitly defined but never implemented or
    properly deployed.  Some workshop attendees agreed that applications
-
-
-
-Rooney                   Expires October 3, 2016                [Page 9]
-
-Internet-Draft                   marnew                       April 2016
-
-
    declaring was quality of service they require was not a good route
    given the lack of success in the past.
+
+
+
+
+Rooney                   Expires March 11, 2018                 [Page 9]
+
+Internet-Draft                   marnew                   September 2017
+
 
 3.1.1.  Trust and the Mobile Network Complexities
 
@@ -516,9 +513,9 @@ Internet-Draft                   marnew                       April 2016
    reasons such as revealing competitive information and applications
    wish to protect their users and only reveal little information to the
    network.  Authentication in that case could be a key design element
-   of any new work, as well as explictness rather than the transparent
+   of any new work, as well as explicitness rather than the transparent
    middleboxes used more recently.  Some workshop attendees suggested
-   any exchange of information should be biodirectional, in an effort to
+   any exchange of information should be bidirectional, in an effort to
    improve trust between the elements.  A robust incentive framework
    could provide a solution to the trust issue, or at least help
    mitigate it.
@@ -554,16 +551,16 @@ Internet-Draft                   marnew                       April 2016
    to meet.  TCP has other issues as well; too many services rely on TCP
    and only TCP, blocking deployment of new transport protocols like
    SCTP and DCCP.  This means that true innovation on the transport
-
-
-
-Rooney                   Expires October 3, 2016               [Page 10]
-
-Internet-Draft                   marnew                       April 2016
-
-
    layer becomes difficult because deployment issues are more
    complicated than just building a new protocol.
+
+
+
+
+Rooney                   Expires March 11, 2018                [Page 10]
+
+Internet-Draft                   marnew                   September 2017
+
 
    The IETF is trying to solve these issues through the "Stack
    Evolution" programme, and the first step in this programme is to
@@ -582,7 +579,7 @@ Internet-Draft                   marnew                       April 2016
    although congestion is usually detected by detecting loss, and better
    methods based on detecting congestion would be beneficial.
 
-   Furthemore, although the deficiencies of TCP are often considered as
+   Furthermore, although the deficiencies of TCP are often considered as
    key issues in the evolution of the stack, the main route to resolve
    these issues may not be a new TCP, but an evolved stack.  SPUD [SPUD]
    and ICN [RFC7476] are two suggestions which may help here.  QUIC
@@ -605,21 +602,21 @@ Internet-Draft                   marnew                       April 2016
    encrypted data over radio access networks as the main issue the real
    issue is network management generally, and all actors (applications
    providers, networks and devices) need to work together to overcome
-   theese general network management issues.  Content providers
-   explained how they assume the mobile networks are standard compliant.
-   When the network is not standards compliant (e.g. using non standards
+   these general network management issues.  Content providers explained
+   how they assume the mobile networks are standard compliant.  When the
+   network is not standards compliant (e.g. using non standards
    compliant intermediaries) content providers can experience real costs
-
-
-
-
-Rooney                   Expires October 3, 2016               [Page 11]
-
-Internet-Draft                   marnew                       April 2016
-
-
    as users contact their support centres to report issues which are
    difficult to test for and build upon.
+
+
+
+
+
+Rooney                   Expires March 11, 2018                [Page 11]
+
+Internet-Draft                   marnew                   September 2017
+
 
    Content providers cited other common issues concerning data traffic
    over mobile networks.  Data caps cause issues for users; users are
@@ -646,7 +643,7 @@ Internet-Draft                   marnew                       April 2016
 
    At the end of the session the panelists were asked to identify one
    key collaborative work item, these were: evolving caching to cache
-   encrypted content, uing one-bit for latency / bandwidth trade-off
+   encrypted content, using one-bit for latency / bandwidth trade-off
    (explained below), better collaboration between the network and
    application, better metrics to aid bug solving and innovation, and
    indications from the network to allow the application to adapt.
@@ -654,7 +651,7 @@ Internet-Draft                   marnew                       April 2016
 6.  Technical Analysis and Response to Potential Regulatory Reaction
 
    This session was conducted under Chatham House Rule.  The session
-   aimed to discuss regulatory and politcal issues; but not their worth
+   aimed to discuss regulatory and political issues; but not their worth
    or need, rather to understand the laws that exist and how
    technologists can properly respond to these.
 
@@ -666,17 +663,17 @@ Internet-Draft                   marnew                       April 2016
    [IWF].  Operators are not expected to decrypt sites, so those
    identified sites which are encrypted will not be blocked.
 
-
-
-
-Rooney                   Expires October 3, 2016               [Page 12]
-
-Internet-Draft                   marnew                       April 2016
-
-
    Parental control-type filters also exist on the network and are
    easily bypassed today, vastly limiting their effectiveness.  Better
-   solutions would allow for users to easily set these restirctions
+   solutions would allow for users to easily set these restrictions
+
+
+
+Rooney                   Expires March 11, 2018                [Page 12]
+
+Internet-Draft                   marnew                   September 2017
+
+
    themselves.  Other regulations are also hard to meet - such as user
    data patterns, or will become harder to collect - such as IoT cases.
    Most attendees agreed that if the governments cannot get the
@@ -686,9 +683,9 @@ Internet-Draft                   marnew                       April 2016
    IAB have concluded blocking and filtering can be done at the endpoint
    of the communication.
 
-   These regulations do not always apply to the internet, and the
-   internet community is not always aware of their existance.
-   Collectively the internet community can work with GSMA and 3GPP and
+   These regulations do not always apply to the Internet, and the
+   Internet community is not always aware of their existence.
+   Collectively the Internet community can work with GSMA and 3GPP and
    act collectively to alleviate the risk imposed by encrypted traffic
    for lawful intercept.  The suggestion from attendees was that if any
    new technical solutions built should have the ability to be easily
@@ -702,7 +699,7 @@ Internet-Draft                   marnew                       April 2016
 
    Based on the talks and discussions throughout the workshop a set of
    requirements and suggested solutions has been collected.  This is not
-   an exhaustve list.
+   an exhaustive list.
 
    o  Encrypted Traffic: any solution should encourage and support
       encrypted traffic.
@@ -725,9 +722,12 @@ Internet-Draft                   marnew                       April 2016
 
 
 
-Rooney                   Expires October 3, 2016               [Page 13]
+
+
+
+Rooney                   Expires March 11, 2018                [Page 13]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
    o  Evolving TCP or evolution on the transport layer: this could take
@@ -744,7 +744,7 @@ Internet-Draft                   marnew                       April 2016
 
    o  PCC: Performance-oriented Congestion Control: is a new
       architecture that aims for consistent high performance even in
-      challenging scenarios.  PCC enpoints observe the connection
+      challenging scenarios.  PCC endpoints observe the connection
       between their actions and their known performance, which allows
       them to adapt their actions.  [PCC]
 
@@ -761,7 +761,7 @@ Internet-Draft                   marnew                       April 2016
       allow the cellular network to provide near real-time information
       on capacity available to the TCP server.  [MTG]
 
-   o  One bit for latency / bandwidth tradeoff: using one bit to
+   o  One bit for latency / bandwidth trade-off: using one bit to
       identify whether a stream prefers low latency at the expense of
       throughput.  This rids solutions of the trust issue as
       applications will need to select the best scenario for their
@@ -781,9 +781,9 @@ Internet-Draft                   marnew                       April 2016
 
 
 
-Rooney                   Expires October 3, 2016               [Page 14]
+Rooney                   Expires March 11, 2018                [Page 14]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
    o  Heuristics: Networks can sometimes identify traffic types through
@@ -803,9 +803,9 @@ Internet-Draft                   marnew                       April 2016
       or other services for content providers to use for faster and
       smoother content delivery.
 
-   o  AQM [AQM] and ECN [RFC3168] deployments: queueing and congestion
+   o  AQM [AQM] and ECN [RFC3168] deployments: queuing and congestion
       management methods have existed for sometime in the form of AQM,
-      ECN and others which can help the transport and internet layer
+      ECN and others which can help the transport and Internet layer
       adapt to congestion faster.
 
    o  Trust Model or Trust Framework: some solutions in this area (e.g.
@@ -826,7 +826,7 @@ Internet-Draft                   marnew                       April 2016
    o  Metrics and metric standards: in order to evolve current protocols
       to be best suited to today's networks data is needed on the
       current network situations, protocol deployments, packet traces
-      and middlebox behaviour.  Futher than this proper testing and
+      and middlebox behaviour.  Further than this proper testing and
       debugging on networks could provide great insight for stack
       evolution.
 
@@ -837,9 +837,9 @@ Internet-Draft                   marnew                       April 2016
 
 
 
-Rooney                   Expires October 3, 2016               [Page 15]
+Rooney                   Expires March 11, 2018                [Page 15]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
    In the workshop attendees identified other areas where greater
@@ -872,11 +872,11 @@ Internet-Draft                   marnew                       April 2016
    the stack evolution ideas and their impact to network management,
    Mobile Throughput Guidance evolution, evolution of the Blind Caching
    work and draft definitions of the "1 bit for latency / bandwidth
-   tradeoff" idea.  As identified in the "Better Collaboration" section
+   trade-off" idea.  As identified in the "Better Collaboration" section
    together we need to ensure that both groups continue the positive
    relationship to move these ideas forward into being real and workable
    solutions and both groups need to understand that even though
-   collaboration between the operator network and the internet is of
+   collaboration between the operator network and the Internet is of
    great importance the item of most importance is the experience and
    security for the users using these services.
 
@@ -885,7 +885,7 @@ Internet-Draft                   marnew                       April 2016
    [RFC7567]  Baker, F., Ed. and G. Fairhurst, Ed., "IETF
               Recommendations Regarding Active Queue Management",
               BCP 197, RFC 7567, DOI 10.17487/RFC7567, July 2015,
-              <http://www.rfc-editor.org/info/rfc7567>.
+              <https://www.rfc-editor.org/info/rfc7567>.
 
 
 
@@ -893,21 +893,21 @@ Internet-Draft                   marnew                       April 2016
 
 
 
-Rooney                   Expires October 3, 2016               [Page 16]
+Rooney                   Expires March 11, 2018                [Page 16]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
    [RFC7476]  Pentikousis, K., Ed., Ohlman, B., Corujo, D., Boggia, G.,
               Tyson, G., Davies, E., Molinaro, A., and S. Eum,
               "Information-Centric Networking: Baseline Scenarios",
               RFC 7476, DOI 10.17487/RFC7476, March 2015,
-              <http://www.rfc-editor.org/info/rfc7476>.
+              <https://www.rfc-editor.org/info/rfc7476>.
 
    [RFC3168]  Ramakrishnan, K., Floyd, S., and D. Black, "The Addition
               of Explicit Congestion Notification (ECN) to IP",
               RFC 3168, DOI 10.17487/RFC3168, September 2001,
-              <http://www.rfc-editor.org/info/rfc3168>.
+              <https://www.rfc-editor.org/info/rfc3168>.
 
    [NOTE_WELL]
               "IETF Note Well", n.d., <https://www.ietf.org/about/note-
@@ -949,9 +949,9 @@ Internet-Draft                   marnew                       April 2016
 
 
 
-Rooney                   Expires October 3, 2016               [Page 17]
+Rooney                   Expires March 11, 2018                [Page 17]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
    [NETWORK_MANAGEMENT]
@@ -1005,9 +1005,9 @@ Internet-Draft                   marnew                       April 2016
 
 
 
-Rooney                   Expires October 3, 2016               [Page 18]
+Rooney                   Expires March 11, 2018                [Page 18]
 
-Internet-Draft                   marnew                       April 2016
+Internet-Draft                   marnew                   September 2017
 
 
    [BLIND_CACHING]
@@ -1061,4 +1061,4 @@ Author's Address
 
 
 
-Rooney                   Expires October 3, 2016               [Page 19]
+Rooney                   Expires March 11, 2018                [Page 19]
