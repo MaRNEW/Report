@@ -4,7 +4,7 @@
 
 Network Working Group                                          N. Rooney
 Internet-Draft                                                      GSMA
-Expires: March 11, 2018                                September 7, 2017
+Expires: March 15, 2018                               September 11, 2017
 
 
  IAB Workshop on Managing Radio Networks in an Encrypted World (MaRNEW)
@@ -53,12 +53,12 @@ Status of This Memo
 
 
 
-Rooney                   Expires March 11, 2018                 [Page 1]
+Rooney                   Expires March 15, 2018                 [Page 1]
 
 Internet-Draft                   marnew                   September 2017
 
 
-   This Internet-Draft will expire on March 11, 2018.
+   This Internet-Draft will expire on March 15, 2018.
 
 Copyright Notice
 
@@ -109,7 +109,7 @@ Copyright Notice
 
 
 
-Rooney                   Expires March 11, 2018                 [Page 2]
+Rooney                   Expires March 15, 2018                 [Page 2]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -165,7 +165,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                 [Page 3]
+Rooney                   Expires March 15, 2018                 [Page 3]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -221,7 +221,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                 [Page 4]
+Rooney                   Expires March 15, 2018                 [Page 4]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -277,7 +277,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                 [Page 5]
+Rooney                   Expires March 15, 2018                 [Page 5]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -333,7 +333,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                 [Page 6]
+Rooney                   Expires March 15, 2018                 [Page 6]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -389,7 +389,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                 [Page 7]
+Rooney                   Expires March 15, 2018                 [Page 7]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -445,7 +445,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                 [Page 8]
+Rooney                   Expires March 15, 2018                 [Page 8]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -501,7 +501,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                 [Page 9]
+Rooney                   Expires March 15, 2018                 [Page 9]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -557,7 +557,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                [Page 10]
+Rooney                   Expires March 15, 2018                [Page 10]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -613,7 +613,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                [Page 11]
+Rooney                   Expires March 15, 2018                [Page 11]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -669,7 +669,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                [Page 12]
+Rooney                   Expires March 15, 2018                [Page 12]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -725,7 +725,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                [Page 13]
+Rooney                   Expires March 15, 2018                [Page 13]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -781,7 +781,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                [Page 14]
+Rooney                   Expires March 15, 2018                [Page 14]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -837,7 +837,7 @@ Internet-Draft                   marnew                   September 2017
 
 
 
-Rooney                   Expires March 11, 2018                [Page 15]
+Rooney                   Expires March 15, 2018                [Page 15]
 
 Internet-Draft                   marnew                   September 2017
 
@@ -861,24 +861,54 @@ Internet-Draft                   marnew                   September 2017
    continue so the two groups can work on solutions which are better for
    both technologies and users.
 
-8.  Next Steps
+8.  Since MaRNEW
 
-   The next steps for MaRNEW attendees are to begin work on a select
-   list of the above recommended solutions and other suggestions within
-   the IETF and within other organisations.  At IETF95 the ACCORD BoF
-   will be held which will bring the workshop discussion to the wider
-   IETF attendance and select key areas to progress on; these are likely
-   to be definitions of the metrics to be collected, more information on
-   the stack evolution ideas and their impact to network management,
-   Mobile Throughput Guidance evolution, evolution of the Blind Caching
-   work and draft definitions of the "1 bit for latency / bandwidth
-   trade-off" idea.  As identified in the "Better Collaboration" section
-   together we need to ensure that both groups continue the positive
-   relationship to move these ideas forward into being real and workable
-   solutions and both groups need to understand that even though
-   collaboration between the operator network and the Internet is of
-   great importance the item of most importance is the experience and
-   security for the users using these services.
+   Since MaRNEW a number of activities have taken place in various
+   seperate working groups or groups external to IETF.  The ACCORD BoF
+   was held at IETF95 which brough the workshop discussion to the wider
+   IETF audiences by providing an account of the discussions within the
+   workshop and highlighting key areas to progress on.  Key areas to
+   progress and an update on their current status follows:
+
+   o  The collection of useable metrics and data were requested by a
+      number of MaRNEW attendees, especially for use within the MAP
+      Research Group; this has been difficult to collect due to the
+      closed nature of mobile network operations.
+
+   o  Understanding impacts to Stack Evolution has continued within the
+      IAB's Stack Evolution programme and throughout Transport related
+      working groups such as TSVWG.
+
+   o  The Mobile Throughput Guidance draft has entered into a testing
+      and data collection phase; although further advancements in
+      transport technologies (noteably QUIC) may have stalled efforts in
+      TCP-related proposals.
+
+   o  Attempts on proposals for caching of encrypted content continue
+      albeit with some security flaws which proponents are working on
+      further proposals to fix.  Most often these are discussed within
+      the HTTP WG.
+
+
+
+
+
+Rooney                   Expires March 15, 2018                [Page 16]
+
+Internet-Draft                   marnew                   September 2017
+
+
+   o  The PLUS working group forming BoF was unsuccessful with attendees
+      expressing concern on the privacy issues associated with the data
+      sharing possibilities of the shim layer proposed.
+
+   The most rewarding output of MaRNEW is perhaps the most intangible.
+   MaRNEW gave two rather divergent industry groups the opportunity to
+   connect and discuss common technologies and issues affecting users
+   and operations.  Mobile Network providers and key internet engineers
+   and experts have developed a greater collaborative relationship to
+   aid development of further standards which work across networks in a
+   secure manner.
 
 9.  Informative References
 
@@ -886,17 +916,6 @@ Internet-Draft                   marnew                   September 2017
               Recommendations Regarding Active Queue Management",
               BCP 197, RFC 7567, DOI 10.17487/RFC7567, July 2015,
               <https://www.rfc-editor.org/info/rfc7567>.
-
-
-
-
-
-
-
-Rooney                   Expires March 11, 2018                [Page 16]
-
-Internet-Draft                   marnew                   September 2017
-
 
    [RFC7476]  Pentikousis, K., Ed., Ohlman, B., Corujo, D., Boggia, G.,
               Tyson, G., Davies, E., Molinaro, A., and S. Eum,
@@ -925,6 +944,16 @@ Internet-Draft                   marnew                   September 2017
    [SDO_3GPP]
               "3GPP Homepage", n.d., <http://www.3gpp.org/>.
 
+
+
+
+
+
+Rooney                   Expires March 15, 2018                [Page 17]
+
+Internet-Draft                   marnew                   September 2017
+
+
    [PCC-QOS]  "Policy and charging control signalling flows and Quality
               of Service (QoS) parameter mapping", March 2016,
               <http://www.3gpp.org/DynaReport/29213.htm>.
@@ -946,13 +975,6 @@ Internet-Draft                   marnew                   September 2017
               Morton, K., "Effect of Ubiquitous Encryption", March 2015,
               <https://tools.ietf.org/html/draft-mm-wg-effect-encrypt-
               01>.
-
-
-
-Rooney                   Expires March 11, 2018                [Page 17]
-
-Internet-Draft                   marnew                   September 2017
-
 
    [NETWORK_MANAGEMENT]
               Smith, K., "Network management of encrypted traffic", May
@@ -980,6 +1002,14 @@ Internet-Draft                   marnew                   September 2017
               <https://tools.ietf.org/html/draft-hoeiland-joergensen-
               aqm-fq-codel-00>.
 
+
+
+
+Rooney                   Expires March 15, 2018                [Page 18]
+
+Internet-Draft                   marnew                   September 2017
+
+
    [QUIC]     Swett, J., "QUIC, A UDP-Based Secure and Reliable
               Transport for HTTP/2", June 2015,
               <https://tools.ietf.org/html/draft-tsvwg-quic-protocol-
@@ -1000,15 +1030,6 @@ Internet-Draft                   marnew                   September 2017
    [PCC]      Schapira, M., "PCC, Re-architecting Congestion Control for
               Consistent High Performance", May 2015,
               <http://arxiv.org/pdf/1409.7092v3.pdf>.
-
-
-
-
-
-Rooney                   Expires March 11, 2018                [Page 18]
-
-Internet-Draft                   marnew                   September 2017
-
 
    [BLIND_CACHING]
               Holmberg, M., "An Architecture for Secure Content
@@ -1040,25 +1061,4 @@ Author's Address
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Rooney                   Expires March 11, 2018                [Page 19]
+Rooney                   Expires March 15, 2018                [Page 19]
