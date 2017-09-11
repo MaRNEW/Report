@@ -393,8 +393,16 @@ In the workshop attendees identified other areas where greater understand could 
 
 Throughout the workshop attendees placed emphasis on the need for better collaboration between the IETF and telecommunications bodies and organisations. The workshop was one such way to achieve this, but the good work and relationships built in the workshop should continue so the two groups can work on solutions which are better for both technologies and users.
 
-# Next Steps
+# Since MaRNEW
 
-The next steps for MaRNEW attendees are to begin work on a select list of the above recommended solutions and other suggestions within the IETF and within other organisations. At IETF95 the ACCORD BoF will be held which will bring the workshop discussion to the wider IETF attendance and select key areas to progress on; these are likely to be definitions of the metrics to be collected, more information on the stack evolution ideas and their impact to network management, Mobile Throughput Guidance evolution, evolution of the Blind Caching work and draft definitions of the "1 bit for latency / bandwidth trade-off" idea. As identified in the "Better Collaboration" section together we need to ensure that both groups continue the positive relationship to move these ideas forward into being real and workable solutions and both groups need to understand that even though collaboration between the operator network and the Internet is of great importance the item of most importance is the experience and security for the users using these services. 
+Since MaRNEW a number of activities have taken place in various seperate working groups or groups external to IETF. The ACCORD BoF was held at IETF95 which brough the workshop discussion to the wider IETF audiences by providing an account of the discussions within the workshop and highlighting key areas to progress on. Key areas to progress and an update on their current status follows:
+
+* The collection of useable metrics and data were requested by a number of MaRNEW attendees, especially for use within the MAP Research Group; this has been difficult to collect due to the closed nature of mobile network operations. 
+* Understanding impacts to Stack Evolution has continued within the IAB's Stack Evolution programme and throughout Transport related working groups such as TSVWG.
+* The Mobile Throughput Guidance draft has entered into a testing and data collection phase; although further advancements in transport technologies (noteably QUIC) may have stalled efforts in TCP-related proposals.
+* Attempts on proposals for caching of encrypted content continue albeit with some security flaws which proponents are working on further proposals to fix. Most often these are discussed within the HTTP WG.
+* The PLUS working group forming BoF was unsuccessful with attendees expressing concern on the privacy issues associated with the data sharing possibilities of the shim layer proposed. 
+
+The most rewarding output of MaRNEW is perhaps the most intangible. MaRNEW gave two rather divergent industry groups the opportunity to connect and discuss common technologies and issues affecting users and operations. Mobile Network providers and key internet engineers and experts have developed a greater collaborative relationship to aid development of further standards which work across networks in a secure manner.
 
 --- back
