@@ -108,8 +108,14 @@ informative:
     date: September 7, 2015
 
   SPUD:
-    target: https://datatracker.ietf.org/wg/spud/documents/
-    title: Session Protocol for User Datagrams
+    target: https://tools.ietf.org/html/draft-trammell-spud-req-04
+    title: Requirements for the design of a Session Protocol for User Datagrams (SPUD)
+    author:
+      ins: B. Trammell, M. Kuehlewind
+
+  PLUS:
+    target: https://www.ietf.org/proceedings/96/plus.html
+    title: Proceedings of the PLUS BoF at IETF 96, Berlin, July 2016
 
   CONEX:
     target: https://datatracker.ietf.org/wg/conex/documents/
@@ -396,11 +402,12 @@ Throughout the workshop attendees placed emphasis on the need for better collabo
 
 Since MaRNEW a number of activities have taken place in various seperate working groups or groups external to IETF. The ACCORD BoF was held at IETF95 which brough the workshop discussion to the wider IETF audiences by providing an account of the discussions within the workshop and highlighting key areas to progress on. Key areas to progress and an update on their current status follows:
 
-* The collection of useable metrics and data were requested by a number of MaRNEW attendees, especially for use within the MAP Research Group; this has been difficult to collect due to the closed nature of mobile network operations. 
-* Understanding impacts to Stack Evolution has continued within the IAB's Stack Evolution programme and throughout Transport related working groups such as TSVWG.
+* The collection of useable metrics and data were requested by a number of MaRNEW attendees; this has been difficult to collect due to the closed nature of mobile network operations. 
+* The IAB's Stack Evolution programme has continued discussion and development of guidance on the evolvability of protocols.
+* The Measurement and Analysis of Protocols (MAP) Research Group was chartered before IETF 96, and provides a venue for the discussion of data and research on many of the topics addressed at MaRNEW, including the deployment of encryption and the prevalence of in-network inpairments to protocol evolution.
 * The Mobile Throughput Guidance draft has entered into a testing and data collection phase; although further advancements in transport technologies (noteably QUIC) may have stalled efforts in TCP-related proposals.
 * Attempts on proposals for caching of encrypted content continue albeit with some security flaws which proponents are working on further proposals to fix. Most often these are discussed within the HTTP WG.
-* The PLUS working group forming BoF was unsuccessful with attendees expressing concern on the privacy issues associated with the data sharing possibilities of the shim layer proposed. 
+* Work on SPUD {{SPUD}} continued as the Path Layer UDP Substrate {{PLUS}}. A PLUS working-group forming BoF was held at IETF 96 in Berlin. A working group was not formed due largely to concerns about the potential end-user privacy impacts of a generic facility for endpoint-path signaling.
 
 The most rewarding output of MaRNEW is perhaps the most intangible. MaRNEW gave two rather divergent industry groups the opportunity to connect and discuss common technologies and issues affecting users and operations. Mobile Network providers and key internet engineers and experts have developed a greater collaborative relationship to aid development of further standards which work across networks in a secure manner.
 
